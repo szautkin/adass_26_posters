@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces Variable", ui-serif, Georgia, serif;
+  --color-background: #f4f0e8;
+  --color-foreground: #1b2a30;
+  --color-card: #fffcf8;
+  --color-muted: #5c6b70;
+  --color-line: #e4dcd0;
+  --color-primary: #0e6b6e;
+  --color-wattle: #b8893a;
+  --color-eucalyptus: #3e6b52;
+  --color-terracotta: #a24b32;
+  --color-dusk: #3d4d73;
+  --shadow-lift: 0 1px 2px rgb(27 42 48 / 0.04), 0 12px 32px rgb(27 42 48 / 0.06);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      transition: none !important;
+    }
+  }
+}

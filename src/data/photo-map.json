@@ -1,0 +1,418 @@
+{
+  "photos": [
+    {
+      "file": "PXL_20261102_042837509.jpg",
+      "code": "JBDYGC",
+      "board": "P603",
+      "confidence": "high",
+      "sharpness": 1821.38,
+      "titleOverlap": 0.714,
+      "runnerUp": "TQV7GS"
+    },
+    {
+      "file": "PXL_20261102_042844728.jpg",
+      "code": "VPGBBE",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 802.62,
+      "titleOverlap": 1.0,
+      "runnerUp": "Y8MJEQ"
+    },
+    {
+      "file": "PXL_20261102_042905927.jpg",
+      "code": "HUL7SV",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1198.92,
+      "titleOverlap": 0.75,
+      "runnerUp": "CMAGVN"
+    },
+    {
+      "file": "PXL_20261102_042920995.jpg",
+      "code": "N3LUNP",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1499.04,
+      "titleOverlap": 1.0,
+      "runnerUp": "HADJDP"
+    },
+    {
+      "file": "PXL_20261102_042926146.jpg",
+      "code": "UULBVK",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 555.94,
+      "titleOverlap": 1.0,
+      "runnerUp": "NBSSD7"
+    },
+    {
+      "file": "PXL_20261102_042930453.jpg",
+      "code": "XVQFKH",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 912.76,
+      "titleOverlap": 1.0,
+      "runnerUp": "NBSSD7"
+    },
+    {
+      "file": "PXL_20261102_042935121.jpg",
+      "code": "BK8JC7",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1051.76,
+      "titleOverlap": 1.0,
+      "runnerUp": "XVQFKH"
+    },
+    {
+      "file": "PXL_20261102_042939154.jpg",
+      "code": "CDFZ9G",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1073.76,
+      "titleOverlap": 1.0,
+      "runnerUp": "T7JFUD"
+    },
+    {
+      "file": "PXL_20261102_042944106.jpg",
+      "code": "D3GNAM",
+      "board": "P409",
+      "confidence": "high",
+      "sharpness": 1255.07,
+      "titleOverlap": 1.0,
+      "runnerUp": "CMAGVN"
+    },
+    {
+      "file": "PXL_20261102_042955814.jpg",
+      "code": "EV3HFD",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1215.86,
+      "titleOverlap": 1.0,
+      "runnerUp": "VPGBBE"
+    },
+    {
+      "file": "PXL_20261102_042958740.jpg",
+      "code": "7GZ8G8",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 908.4,
+      "titleOverlap": 1.0,
+      "runnerUp": "L8WEQ3"
+    },
+    {
+      "file": "PXL_20261102_043016056.jpg",
+      "code": "9ZVATZ",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1257.54,
+      "titleOverlap": 1.0,
+      "runnerUp": "CA7TPL"
+    },
+    {
+      "file": "PXL_20261102_043020262.jpg",
+      "code": "A8BRSC",
+      "board": "P405",
+      "confidence": "high",
+      "sharpness": 1179.41,
+      "titleOverlap": 1.0,
+      "runnerUp": "Y8MJEQ"
+    },
+    {
+      "file": "PXL_20261102_043035765.jpg",
+      "code": "KQ8HGM",
+      "board": "P605",
+      "confidence": "medium",
+      "sharpness": 1455.12,
+      "titleOverlap": 1.0,
+      "runnerUp": "HADJDP"
+    },
+    {
+      "file": "PXL_20261102_043040539.jpg",
+      "code": "L8WEQ3",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 999.88,
+      "titleOverlap": 1.0,
+      "runnerUp": "7GZ8G8"
+    },
+    {
+      "file": "PXL_20261102_043045148.jpg",
+      "code": "LSM8RX",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1519.23,
+      "titleOverlap": 1.0,
+      "runnerUp": "KR9DUR"
+    },
+    {
+      "file": "PXL_20261102_043052820.jpg",
+      "code": "ZRC3FQ",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1281.88,
+      "titleOverlap": 1.0,
+      "runnerUp": "RMAQFN"
+    },
+    {
+      "file": "PXL_20261102_043100522.jpg",
+      "code": "VD33TX",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1704.37,
+      "titleOverlap": 1.0,
+      "runnerUp": "Y8MJEQ"
+    },
+    {
+      "file": "PXL_20261102_043108579.jpg",
+      "code": "VF7YKR",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1355.4,
+      "titleOverlap": 1.0,
+      "runnerUp": "RQVARA"
+    },
+    {
+      "file": "PXL_20261102_043120802.jpg",
+      "code": "FUWBLF",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 899.29,
+      "titleOverlap": 1.0,
+      "runnerUp": "CMAGVN"
+    },
+    {
+      "file": "PXL_20261102_043125526.jpg",
+      "code": "LLETHA",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 509.44,
+      "titleOverlap": 1.0,
+      "runnerUp": "H3RAWD"
+    },
+    {
+      "file": "PXL_20261102_043126798.jpg",
+      "code": "",
+      "board": "",
+      "confidence": "reject",
+      "sharpness": 827.45,
+      "titleOverlap": 1.0,
+      "runnerUp": "H3RAWD"
+    },
+    {
+      "file": "PXL_20261102_043132492.jpg",
+      "code": "HADJDP",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 664.64,
+      "titleOverlap": 1.0,
+      "runnerUp": "VCESFR"
+    },
+    {
+      "file": "PXL_20261102_043141853.jpg",
+      "code": "S8LFSQ",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 888.45,
+      "titleOverlap": 1.0,
+      "runnerUp": "QWVPDJ"
+    },
+    {
+      "file": "PXL_20261102_043146284.jpg",
+      "code": "VCESFR",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 700.0,
+      "titleOverlap": 1.0,
+      "runnerUp": "PZMJUX"
+    },
+    {
+      "file": "PXL_20261102_043154530.jpg",
+      "code": "CMAGVN",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1363.19,
+      "titleOverlap": 0.333,
+      "runnerUp": "CMAGVN"
+    },
+    {
+      "file": "PXL_20261102_043204084.jpg",
+      "code": "U3X8EN",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1091.6,
+      "titleOverlap": 0.909,
+      "runnerUp": "LSM8RX"
+    },
+    {
+      "file": "PXL_20261102_043331919.jpg",
+      "code": "KDNTCS",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 880.99,
+      "titleOverlap": 1.0,
+      "runnerUp": "EV3HFD"
+    },
+    {
+      "file": "PXL_20261102_043336733.jpg",
+      "code": "LFJZE3",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 753.64,
+      "titleOverlap": 1.0,
+      "runnerUp": "FUWBLF"
+    },
+    {
+      "file": "PXL_20261102_043345951.jpg",
+      "code": "G8ABDE",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 630.16,
+      "titleOverlap": 1.0,
+      "runnerUp": "H3RAWD"
+    },
+    {
+      "file": "PXL_20261102_043351338.jpg",
+      "code": "9ZAVQS",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1192.92,
+      "titleOverlap": 1.0,
+      "runnerUp": "7GZ8G8"
+    },
+    {
+      "file": "PXL_20261102_043356491.jpg",
+      "code": "CA7TPL",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 816.37,
+      "titleOverlap": 1.0,
+      "runnerUp": "NBSSD7"
+    },
+    {
+      "file": "PXL_20261102_043404450.jpg",
+      "code": "CXU8Q3",
+      "board": "P804",
+      "confidence": "high",
+      "sharpness": 783.93,
+      "titleOverlap": 1.0,
+      "runnerUp": "H3RAWD"
+    },
+    {
+      "file": "PXL_20261102_043409740.jpg",
+      "code": "GCHWPD",
+      "board": "P805",
+      "confidence": "high",
+      "sharpness": 924.14,
+      "titleOverlap": 0.636,
+      "runnerUp": "XZAGQJ"
+    },
+    {
+      "file": "PXL_20261102_043414686.jpg",
+      "code": "H3RAWD",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 672.94,
+      "titleOverlap": 0.8,
+      "runnerUp": "G8ABDE"
+    },
+    {
+      "file": "PXL_20261102_043419602.jpg",
+      "code": "HLJYKY",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1335.22,
+      "titleOverlap": 1.0,
+      "runnerUp": "XVQFKH"
+    },
+    {
+      "file": "PXL_20261102_043424439.jpg",
+      "code": "HTF7EV",
+      "board": "P808",
+      "confidence": "high",
+      "sharpness": 1073.32,
+      "titleOverlap": 1.0,
+      "runnerUp": "D3GNAM"
+    },
+    {
+      "file": "PXL_20261102_043430046.jpg",
+      "code": "NUWGT3",
+      "board": "P810",
+      "confidence": "high",
+      "sharpness": 837.84,
+      "titleOverlap": 0.571,
+      "runnerUp": "A8BRSC"
+    },
+    {
+      "file": "PXL_20261102_043434445.jpg",
+      "code": "P8CRXA",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 989.74,
+      "titleOverlap": 0.833,
+      "runnerUp": "XVQFKH"
+    },
+    {
+      "file": "PXL_20261102_043442279.jpg",
+      "code": "PZMJUX",
+      "board": "P812",
+      "confidence": "medium",
+      "sharpness": 448.79,
+      "titleOverlap": 0.25,
+      "runnerUp": "D3GNAM"
+    },
+    {
+      "file": "PXL_20261102_043448938.jpg",
+      "code": "RMAQFN",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 816.8,
+      "titleOverlap": 1.0,
+      "runnerUp": "ZRC3FQ"
+    },
+    {
+      "file": "PXL_20261102_043454808.jpg",
+      "code": "SWAFSB",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1542.69,
+      "titleOverlap": 1.0,
+      "runnerUp": "Y8MJEQ"
+    },
+    {
+      "file": "PXL_20261102_043459793.jpg",
+      "code": "T7JFUD",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 1203.28,
+      "titleOverlap": 1.0,
+      "runnerUp": "N3LUNP"
+    },
+    {
+      "file": "PXL_20261102_043508181.jpg",
+      "code": "WXZLEG",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 795.47,
+      "titleOverlap": 0.182,
+      "runnerUp": "RQVARA"
+    },
+    {
+      "file": "PXL_20261102_043511922.jpg",
+      "code": "XWZK7V",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 592.17,
+      "titleOverlap": 0.25,
+      "runnerUp": "RQVARA"
+    },
+    {
+      "file": "PXL_20261102_043516962.jpg",
+      "code": "NBSSD7",
+      "board": "",
+      "confidence": "high",
+      "sharpness": 777.19,
+      "titleOverlap": 1.0,
+      "runnerUp": "T7JFUD"
+    }
+  ]
+}

@@ -1,0 +1,1788 @@
+[
+  {
+    "code": "SWAFSB",
+    "title": "ALMA Pipeline Evolution",
+    "abstract": "The CASA/ALMA Pipeline is the standard data processing software for the Atacama Large (sub-)Millimeter Array (ALMA) radio interferometer. It has been developed by an international team over the course of more than 20 years and it is now used to process >95% of all ALMA datasets.\n\nThe planned ALMA Wideband Sensitivity Upgrade (WSU) will be enhancing the observing capabilities with larger bandwidths and better spectral resolution, leading to orders of magnitude higher data volumes which will need a new highly parallelized data processing system.\n\nIn this poster we describe ongoing work to prepare the pipeline for this future workflow based system. We discuss refactoring the interferometry imaging, the most time consuming step in the pipeline, to use faster characterization of features in datasets via region-of-interest detection, reducing pre-imaging workloads and mitigation strategies while limiting any scientific loss.\n\nWe are also working on analyzing the so called \"Pipeline Context\" which acts as a central hub to record stage results and to transport intermediate products for use in later stages. Its current mixture of use cases needs to be modularized and distributed to be scalable.\n\nTo enhance ALMA's \"Fast Lane\" delivery of pipeline results, this cycle we have worked on improving a number of our Quality Assessment (QA) Scores to allow for more robust identification of pipeline runs that can be immediately delivered to the PIs without detailed human inspection.\n\nFinally, a large documentation restructuring effort using \"readthedocs\" has been undertaken to streamline and improve existing documents and facilitate adding more content which will help transfer the existing pipeline to the new data processing system.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-02",
+    "start": "10:00",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Dirk Muders",
+        "code": "B3LBQV"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/SWAFSB/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/SWAFSB/resources/ALMA-Pipeline-Evolution-2_BmkEGpi.pdf",
+    "image": {
+      "full": "/posters/SWAFSB.webp",
+      "thumb": "/posters/SWAFSB-thumb.webp"
+    }
+  },
+  {
+    "code": "KQ8HGM",
+    "title": "Pythonic data reduction pipeline framework for ESO software stack",
+    "abstract": "In 2023, ESO approved the use of Python in instrument software packages, enabling developers to work at a higher level of abstraction than is possible with legacy C code. This can substantially improve code reuse and allow greater modularity through declarative and object-oriented programming.\n\nObject-oriented design offers several notable advantages for pipeline development. Data items, their relationships and processing steps can be declared, reused, and extended with minimal effort. Human-readable descriptions of data items and algorithms remain closely integrated with the code, reducing the need to maintain separate documentation. Through use of introspection, automated testing for compliance with the specification can also be integrated into the development process, helping prevent inconsistencies. Most importantly, this approach enables us to decouple the general principles of data-reduction pipelines from the scientific objectives of individual instruments. Pipeline developers can therefore focus on instrument-specific requirements without the necessity to pay attention to the complexities of managing the data flow.\n\nWe present a generic Python framework for building data-processing pipelines, developed collaboratively by A* software group at the University of Vienna and Academia Sinica Institute of Astronomy and Astrophysics in Taipei, Taiwan. The framework is fully compatible with the existing ESO software stack (EDPS, pyesorex) while keeping dependencies to minimum in order to allow independent use. At the same time, it is already being employed to implement the data-reduction pipeline for METIS, one of the first-generation instruments of the Extremely Large Telescope, potentially paving the way for broader adoption across future instruments.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-02",
+    "start": "10:00",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Martin Baláž",
+        "code": "KYTE9U"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/KQ8HGM/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/KQ8HGM/resources/main_ZL1paLG.pdf",
+    "board": "P605",
+    "image": {
+      "full": "/posters/KQ8HGM.webp",
+      "thumb": "/posters/KQ8HGM-thumb.webp"
+    }
+  },
+  {
+    "code": "LFJZE3",
+    "title": "VizieR versus increasing bot scraping",
+    "abstract": "The CDS VizieR service, like many Data Centers, is facing a dramatic increase in bot crawling. These are millions of queries each day, which pollute and impact the VizieR service. This massive and blind  harvesting targets static and dynamic resources and is generally controlled by AI to populate knowledge bases. Log analysis shows many queries, executed by a wide range of IPs, all of which look legitimate without any obvious AI marker: it becomes harder to detect their origin and to manage the flow.\nMaintaining good availability for users requires redefining data access management. This is often done urgently, but in the background, the CDS is investigating access management for the long term. In this poster, we present the solutions used, the solution implemented today, and those planned.",
+    "type": "Poster",
+    "track": {
+      "name": "Usability, accessibility and security in astronomy software",
+      "slug": "8-usability-accessibility-and-security-in-astronomy-software"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "10:00",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Gilles Landais",
+        "code": "DPMKH3"
+      },
+      {
+        "name": "MANTELET Gregory",
+        "code": "WTDCUN"
+      },
+      {
+        "name": "Fernique",
+        "code": "TMJYMH"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/LFJZE3/",
+    "image": {
+      "full": "/posters/LFJZE3.webp",
+      "thumb": "/posters/LFJZE3-thumb.webp"
+    }
+  },
+  {
+    "code": "CXU8Q3",
+    "title": "Astellum: A Morphological Feature Annotation Tool for Astronomy Outreach",
+    "abstract": "High-quality astrophotos are far more accessible to amateurs with the wide use of smart telescopes, cheaper equipment and social media sharing. Identifying what celestial objects are in the photos is well achieved by existing astronomy software. However, the process of recognising morphological features and generating audience-tailored explanations is still complicated. This step is essential in outreach, as it turns initial interest into sustained engagement with astronomy.\n\nAstellum is an open-source outreach tool, featuring celestial object recognition, morphological feature annotation, and poster generation. A WCS-based feature atlas and AI-assisted explanation generation make it possible for audiences to understand professional astronomical images at a level suited to them.\n\nKiosk mode in Astellum is designed for public observing night events, through which users can understand the morphological features and the explanations in real time. Additionally, the other two modes, Atlas and Studio, provide advanced atlas management and outreach poster editing.\n\nThe tool is under active development and testing. We plan to evaluate it with school groups. ADASS will be a good opportunity to gather feedback from a wider audience.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-02",
+    "start": "10:09",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Amy Tang",
+        "code": "A8CASU"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/CXU8Q3/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/CXU8Q3/resources/Astellum_ADASS_Poster_Kd4nlnZ.pdf",
+    "board": "P804",
+    "image": {
+      "full": "/posters/CXU8Q3.webp",
+      "thumb": "/posters/CXU8Q3-thumb.webp"
+    }
+  },
+  {
+    "code": "BK8JC7",
+    "title": "Astronomical Projects with Multiple Repositories: A Portal for Consolidated Information and Kubernetes-Based Operations",
+    "abstract": "# Astronomical Projects with Multiple Repositories: A Portal for Consolidated Information and Kubernetes-Based Operations\n\n**Authors:**  \nE. Buchholz<sup id=\"fnref:1\"><a href=\"#fn:1\" class=\"footnote-ref\">1</a></sup>, S. Borra<sup id=\"fnref:1\"><a href=\"#fn:1\" class=\"footnote-ref\">1</a></sup>, M. Drobek<sup id=\"fnref:1\"><a href=\"#fn:1\" class=\"footnote-ref\">1</a></sup>, L. Haupt<sup id=\"fnref:1\"><a href=\"#fn:1\" class=\"footnote-ref\">1</a></sup>, H. Heßling<sup id=\"fnref:1\"><a href=\"#fn:1\" class=\"footnote-ref\">1</a></sup>\n\n**Affiliation:**  \n<sup id=\"fnref:1\"><a href=\"#fn:1\" class=\"footnote-ref\">1</a></sup> German Center for Astrophysics (DZA), Görlitz, Germany.\n\n**Date:**  \nJuly 30, 2026\n\n# Abstract\nThe antennas and telescopes of the Square Kilometre Array Observatory (SKAO) will produce enormous data streams, making long-term storage of the raw telescope data impractical. Instead, projects such as ‘Transients and Pulsars with MeerKAT’ (TRAPUM) process the data streams in real time. They search for pulsars and transients, storing only data of scientific relevance. This real time processing is performed by a largely automated pipeline, though final steps still require manual inspection.\n\nThe Machine-Learning based Pipeline for Pulsar Analysis (ML-PPA) project aims to eliminate the manual steps by providing a fully automated analysis pipeline for pulsar searches, developed by an interdisciplinary team of astronomers, physicists and data scientists.\nAs the ML-PPA project continues to grow, the increasing involvement of researchers and the expansion of software have introduced challenges in maintaining a well-organised and scalable software structure. \nSuch project needs to adopt modern engineering practices, including a Continuous Integration and Continuous Deployment (CI/CD) pipeline for each repository, test coverage and automated deployment of documentation. In addition to eliminating isolated information silos within the infrastructure, a single portal was set up to centralise all information.\n\nThis presentation provides an overview of the software architecture of the ML-PPA project and explains how the portal and documentation for each of the sub-projects are automatically generated from the source code and made available online. In addition, containerisation and a Kubernetes infrastructure are used to operate the entire ML-PPA system. Both the repositories and the documentation remain in-house, which enables automated updates, thereby reducing maintenance costs in particular. \n\nFuture additions to ML-PPA will follow this workflow to ensure high-quality, well-documented code that is seamlessly deployed on a modern infrastructure. The already substantial volume of software documentation makes it difficult to extract relevant information. Therefore, LLMs (Large Language Models) are to be integrated in future to facilitate the use of ML-PPA.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-02",
+    "start": "10:09",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Elsa Buchholz (DZA)",
+        "code": "38JAVQ"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/BK8JC7/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/BK8JC7/resources/poster_adass_2026_mlppa_b_BDb8hMp.pdf",
+    "image": {
+      "full": "/posters/BK8JC7.webp",
+      "thumb": "/posters/BK8JC7-thumb.webp"
+    }
+  },
+  {
+    "code": "U3X8EN",
+    "title": "Beyond XMMGPT: Agentic AI for Science Operations Centres, from Proposal Preparation to Catalogue Exploration",
+    "abstract": "Large Language Models are often presented as conversational interfaces, but their greater value for mission operations may lie in their ability to coordinate trusted tools, technical knowledge, and scientific services. \n\nXMMGPT is an Agentic AI prototype developed for the XMM-Newton Science Operations Centre that combines Retrieval-Augmented Generation over mission documentation with access to operational and scientific services through machine-readable interfaces.\n\nBuilding on the XMMGPT prototype previously presented at ADASS, this contribution shifts the focus from an individual mission assistant to a reusable architectural pattern for Science Operations Centres. We demonstrate how an LLM can act as a mediator between astronomers and existing mission capabilities, selecting and invoking specialised services rather than attempting to reproduce their functionality. Current use cases include querying technical documentation, checking target visibility, exploring X-ray catalogues through natural-language-to-ADQL workflows, retrieving and generating scientific products, estimating pile-up and count-rate conversions, and accessing upper-limit and long-term light-curve services. These capabilities support an interactive proposal preparation workflow in which users can move from a scientific question to feasibility assessment and archive exploration through a single conversational interface.\n\nThe approach relies on constrained, well-tested, agent-ready services with explicit schemas, controlled parameters, provenance, and human oversight. This separation between a mission-independent AI orchestration layer and mission-specific knowledge and tools offers a practical route towards reuse across multiple missions and observatories, while retaining scientific traceability and operational control.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "AI as a tool for data discovery and data management",
+      "slug": "4-ai-as-a-tool-for-data-discovery-and-data-management"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "10:09",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Aitor Ibarra Ibaibarriaga",
+        "code": "RKNBAD"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/U3X8EN/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/U3X8EN/resources/AIBARRA_ADASS_2026_Beyond_CTsovBN.pdf",
+    "image": {
+      "full": "/posters/U3X8EN.webp",
+      "thumb": "/posters/U3X8EN-thumb.webp"
+    }
+  },
+  {
+    "code": "NBSSD7",
+    "title": "A distributed system for collecting sky brightness data",
+    "abstract": "The Dark Sky Protection Project aims to establish long-term monitoring of sky brightness at several sites of interest to NOIRLab. We present an open-source Python package for acquiring and managing data from SQM-LE and TESS-W4C devices, together with supporting components that enable their autonomous operation at geographically distributed locations. The system is designed for robust, unattended operation, with resilience to communication, hardware, and software failures. These capabilities provide a scalable infrastructure for long-term characterization of sky brightness and its evolution at astronomical sites.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-02",
+    "start": "10:27",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Simón Torres",
+        "code": "7NXHFW"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/NBSSD7/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/NBSSD7/resources/poster_adass26_simon_torr_cm4zg9M.pdf",
+    "image": {
+      "full": "/posters/NBSSD7.webp",
+      "thumb": "/posters/NBSSD7-thumb.webp"
+    }
+  },
+  {
+    "code": "MGXQW3",
+    "title": "ARCADIA: AI-based Real-time Analysis for Autonomous Space Systems",
+    "abstract": "The New Space Economy, enabled by the increasing availability of commercial launch vehicles and spacecraft, has renewed interest in lunar exploration. Within the Italian PRORIS program and the HARLOCK project, the Rare-earth & Heavy Elements Analyzer (RHEA) is being developed. RHEA is a payload consisting of a suite of instruments designed for integration on small rovers, enabling rare earth element (REE) and rare-metal scouting and prospecting through a highly coordinated and synergistic approach based on a progressive and multiscale observation strategy. RHEA combines gamma-ray spectroscopy, hyperspectral imaging, ultraviolet fluorescence screening, and X-ray fluorescence analysis to identify and characterize REE-bearing deposits and associated elemental and mineralogical signatures across different spatial scales. Its operation in the lunar environment is constrained by limited onboard power and communication bandwidth with Earth, making artificial intelligence (AI) a key enabling technology for autonomous scientific operations and onboard data processing.\n\nWe present the AI-based Real-time Computational Analysis platform for Decision Inference in Autonomous space systems (ARCADIA), which implements the Instrument Control Unit (ICU) and onboard Data Processing Unit (DPU) for the RHEA rover. The ICU controls and monitors the scientific payload, while the DPU performs AI-enhanced onboard data analysis, including spectral identification of REEs, real-time multi-instrument data fusion, and data reduction. These capabilities support the generation of scientific products, autonomous decision-making, and efficient use of communication bandwidth and onboard storage. Real-time onboard processing of scientific data enables ARCADIA to enhance the effectiveness of the scouting process by rapidly guiding the rover toward the most promising sites for further investigation, thereby accelerating target selection and exploration even during short-duration missions.\n\nThe ARCADIA software architecture includes interfaces with the rover and scientific payloads. A market survey of low-power Commercial Off-The-Shelf (COTS) computing platforms was conducted to identify solutions meeting the project requirements for power consumption, computational capability, and environmental constraints. AI algorithms for onboard data analysis were evaluated on low-power edge-computing platforms, including the NVIDIA Jetson Nano, and on RISC-V processors representative of flight-proven hardware. Candidate platforms target a power consumption below 5 W while supporting AI models optimized through pruning and quantization, with the goal of enabling real-time onboard processing under lunar resource constraints.\n\nThe technologies and methodologies developed within ARCADIA are designed to be transferable to other autonomous space systems and adaptable to a broader range of future space missions.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "10:27",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Nicolò Parmiggiani",
+        "code": "7NDLK8"
+      },
+      {
+        "name": "Ghulam Mustafa",
+        "code": "JQPUAM"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/MGXQW3/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/MGXQW3/resources/ARCADIA_Poster_ADASS2026_wqR39w9.pdf"
+  },
+  {
+    "code": "ZKM9MV",
+    "title": "Sharing best practices for astronomical software, services and infrastructure.",
+    "abstract": "The interoperability of astronomical software and services relies on the development and implementation of Virtual Observatory (VO) aware software. In practice this requires supporting structures that facilitate coordination and collaboration of the software developers and scientists who build these systems and contribute to the underlying infrastructure. While on-line platforms and forums have a role, we emphasise the importance of in-person events to break down barriers and provide an environment for effiicient exchanges of ideas and problem solving in hack-a-thon activities. We present the results of the Astronomy Open Science Competence Centre Pilot (Astro-CC Pilot) project, in particular the series of events that has enabled collaboration in the European astronomical community on the topic of implementing VO standards in tools and services. The Astro-CC Technology Forums, Data Provider Forum and Scientific Training events have reached a wide range of technical and scientific participants, and the results are helping us to define the requirements for a Competence Centre that would be integrated into an eventual Astronomy node of the European Open Science Cloud (EOSC).",
+    "type": "Featured Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-02",
+    "start": "10:27",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Mark Allen",
+        "code": "PXBXEJ"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/ZKM9MV/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/ZKM9MV/resources/Poster-ALLEN_M_S04lCHP.pdf"
+  },
+  {
+    "code": "9ZAVQS",
+    "title": "A New Method for Visualizing Multiband Astronomical Data in the Hue-Saturation-Value Colour Space",
+    "abstract": "The visualization of astronomical data remains a key process in the modern astronomy workflow, providing the ability to generate diagnostics, identify features, and share results. By processing data in the HSV colour space, we expose the scientific and visual choices traditionally made implicitly in the RGB colour space. We present one such method of calculation in the HSV colour space for multiband images, for each of the three Hue-Saturation-Value channels. We represent relative spectral luminosity via the Hue channel, the spread of luminosity via the Saturation channel, and the combined luminosity via the Value channel. This method depicts noise, luminosity, and spectral differences so as to be able to better diagnose observation issues, identify and classify features, and depict multiband images when compared to traditional RGB methods.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-02",
+    "start": "10:36",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Hansen Jiang",
+        "code": "7BGKDW"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/9ZAVQS/",
+    "image": {
+      "full": "/posters/9ZAVQS.webp",
+      "thumb": "/posters/9ZAVQS-thumb.webp"
+    }
+  },
+  {
+    "code": "8FYXLW",
+    "title": "AstroPhot: fitting everyhting everywhere all at once in astronomical images",
+    "abstract": "Astrophot is a mature tool for parametric image modelling of astronomical images. One has the flexibility to construct arbitrarily complex models of arbitrarily many objects in a scene over arbitrarily many images at different epochs/wavelengths. This is done through an intuitive object oriented interface, and assisted by a large suite of detailed Jupyter notebook tutorials and documentation describing every model. It operates in PyTorch or JAX allowing for accelerated CPU or GPU processing; further, with a caskade backend it is able to trivially interface with other codes such as caustics to add gravitational lens modelling capabilities. In this talk I will detail some of the applications for which AstroPhot is already in use, as well as ongoing transient scene modelling work for the LSST.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-02",
+    "start": "10:36",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Connor Stone",
+        "code": "STSG3P"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/8FYXLW/"
+  },
+  {
+    "code": "HADJDP",
+    "title": "Prototyping a Space-Based Observatory Pipeline in Three Weeks with Claude Code",
+    "abstract": "The TOLIMAN space telescope is a low-cost mission to detect exoplanets via astrometry, with a focus on the Alpha Centauri binary system, our nearest-neighbor star system. The data processing pipeline will be deployed on the Google Cloud Platform (GCP) to best cater to the international collaboration. The pipeline utilizes a persistent GCP Virtual Machine (VM) running the Dagster orchestration software. Each data processing task is packaged as a Docker image and executed as an ephemeral Cloud Run job, with processed data stored in a GCP bucket and a PostgreSQL database hosted on Google Cloud SQL.  The prototype, our first data pipeline on Google Cloud, was built by leveraging the Claude Code agentic coding tool, which facilitated rapid learning of the necessary tools. A streamlined development cycle enabled us to investigate, implement, and test in fast succession, resulting in a working pipeline within three weeks of initial conceptualization. We found Claude Code to be immensely useful but could result in unnecessary complexity and software bloat without proper human supervision. We will discuss our observations and recommendations for using Claude Code for scientific software engineering.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "AI as tool for software engineering",
+      "slug": "6-ai-as-tool-for-software-engineering"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "10:36",
+    "duration": "00:09",
+    "persons": [
+      {
+        "name": "Jeffrey Smith",
+        "code": "7V8QVD"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/HADJDP/",
+    "image": {
+      "full": "/posters/HADJDP.webp",
+      "thumb": "/posters/HADJDP-thumb.webp"
+    }
+  },
+  {
+    "code": "7YYV7D",
+    "title": "A Unified Astronomy Thesaurus in the era of Large Language Models",
+    "abstract": "The Unified Astronomy Thesaurus (UAT) is an open, interoperable community thesaurus that organizes astronomy concepts and their relationships. Its usage in the astronomical community continues to grow, alongside the expansion of its content to meet evolving community needs. This paper briefly outlines the rationale behind the UAT, describes its current curation process and release cycle, and discusses the challenges and opportunities it presents in the era of Large Language Models (LLMs).",
+    "type": "Poster",
+    "track": {
+      "name": "AI as a tool for data discovery and data management",
+      "slug": "4-ai-as-a-tool-for-data-discovery-and-data-management"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "15:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Sebastien Derriere",
+        "code": "K3EKD7"
+      },
+      {
+        "name": "Sharon E. Hunt",
+        "code": "FK3ECM"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/7YYV7D/"
+  },
+  {
+    "code": "ZRC3FQ",
+    "title": "The NEOCC Observations Analysis Tool: Astrometric Residual Diagnostics and Unexplained Systematic Errors",
+    "abstract": "Astrometric residuals, the difference between the measured position of an object and the position predicted by orbital calculations at the time of observation, constitute a fundamental diagnostic as they can reveal limitations in the dynamical model or errors in the measurements. This can be particularly relevant for newly discovered asteroid imminent impactors which usually have only a few observation and astrometric errors could bias the orbital solution and the resulting impact prediction. Providing observatories with timely and transparent feedback on the quality of their astrometry is therefore essential for improving individual measurements and the overall reliability of the orbit solutions.\n\nThe ESA Near-Earth Object Coordination Centre (NEOCC) has recently released a new suite of free and publicly available tools for astrometric residual analysis, integrated into its NEO Portal. These include the “Observations Analysis” and “Observatories” pages[1, 2], together with a dedicated “Residuals” tab on individual object pages (e.g., (99942) Apophis) [3], offering interactive visualizations, advanced filtering, per-observatory statistics, and downloadable datasets[1]. Based on the output of the NEOCC orbit determination software Aegis[4], the tool shows astrometric residuals on demand for any object, at any epoch, and for every contributing observatory, transforming what was previously an internal diagnostic capability into a public resource.\n\nWe will demonstrate the tool live, showing how both professional and amateur observers can use it to assess the quality of their measurements, identify possible timing biases (e.g. Figure 1, left), and other systematic deviations in their astrometric submissions. It can be used to validate the overall performance of an observing system and to improve its hardware, software or configuration.\n\nIn addition to the live demonstration, we will present results from mining and analysing more than half a billion processed observations using these tools. We will present two still unrecognized systematic patterns in the mean astrometric residuals: one affecting the largest asteroid surveys (e.g. Figure 1, top right), and another one correlated with position on the celestial sphere (e.g. Figure 1 bottom right). The origin of these systematic effects remains under investigation, and a detailed analysis will be presented in a paper currently being prepared.\n\n[1] https://neo.ssa.esa.int/observatories\n[2] https://neo.ssa.esa.int/observations-analysis?tab=res_ra_vs_dec&obs_code=F51\n[3] https://neo.ssa.esa.int/search-for-asteroids?sum=1&des=99942%20Apophis\n[4] https://ui.adsabs.harvard.edu/abs/2024CeMDA.136...58F",
+    "type": "Featured Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-02",
+    "start": "15:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Dario Oliviero",
+        "code": "WQ8YW3"
+      },
+      {
+        "name": "Eduardo Alonso Peleato",
+        "code": "L9YNPD"
+      },
+      {
+        "name": "Francesco Gianotto",
+        "code": "RT93KR"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/ZRC3FQ/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/ZRC3FQ/resources/ADASS2026_poster_mkhyXFa.pptx",
+    "image": {
+      "full": "/posters/ZRC3FQ.webp",
+      "thumb": "/posters/ZRC3FQ-thumb.webp"
+    }
+  },
+  {
+    "code": "HLJYKY",
+    "title": "Transitioning Subaru's Remote Observing Software to a Web Site",
+    "abstract": "A number of observatories use VNC (Virtual Network Computing) servers and\nclients to monitor the observation screens from open-use observers\nconnecting from remote locations. Usually this involves a custom software\npackage that must be installed and configured with some sort of security key\nand/or password to secure the system.  This puts an onus on software\ndevelopers to support multiple platforms (linux, mac os x and windows)\nfor the software, and additionally, provide support for installation issues,\nconnection issues and assorted remote troubleshooting.\n\nWe present a case study in transitioning from a remote software package to\na secure web site with second factor authentication at Subaru Telescope.\nThe site is supported by all modern browsers on all platforms, and provides\nexcellent viewing capabilities for all screens--without requiring any\nintrusive changes on the observatory software side.  This transition has\nallowed us to minimize installation hassles for remote observers and\ngreatly simplify troubleshooting and maintenance because there is no longer\nany custom remote software for the user to install.  We discuss the\narchitecture of the new system, what pieces needed to be developed for the\nobservatory side and provide some limited anecdotal data on use (the system\nwent into use in August 2026).",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-02",
+    "start": "15:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Eric Jeschke",
+        "code": "SCVNFT"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/HLJYKY/",
+    "image": {
+      "full": "/posters/HLJYKY.webp",
+      "thumb": "/posters/HLJYKY-thumb.webp"
+    }
+  },
+  {
+    "code": "9ZVATZ",
+    "title": "Evolving the Data Central Archive: Scaling and Optimising Archival and Automated Data Reduction Systems",
+    "abstract": "Since the Data Central Archive began with the Anglo Australian Telescope (AAT) Archive in 2020, the archive has become an important service for Australian astronomy. It has since been expanded to include data from the ANU 2.3m telescope at Siding Spring Observatory and an automated reduction pipeline system for the instrument WiFeS. Reduced data for the 2.3m is also available and queryable through the archive.\n\nHowever as the archive has grown in size to 1.3 million files for the AAT archive, query performance has declined. This poster will present how cone search query times were reduced by up to 95% using GeoJSON indexing in the MongoDB database backend. The poster will also present work on HiPS fibre table visualisations that have been generated from archival data for 2dF instruments on the AAT.\n\nFinally, we will outline planned new additions to the archive: an automated data reduction pipeline for the Veloce instrument on the AAT, and an archive of a monitoring programme of Rubin Deep Drilling Fields using the Australian SKA Pathfinder (ASKAP). We will also describe ongoing work to modernise the backend to support direct API access, improving performance and scalability to facilitate the deployment of additional future archives.",
+    "type": "Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-02",
+    "start": "15:12",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "James Coulson",
+        "code": "AQBY9H"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/9ZVATZ/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/9ZVATZ/resources/a1_ADASS_2026_Archive_Pos_cXfXeQo.pdf",
+    "image": {
+      "full": "/posters/9ZVATZ.webp",
+      "thumb": "/posters/9ZVATZ-thumb.webp"
+    }
+  },
+  {
+    "code": "KDNTCS",
+    "title": "More Structure, Less Handwork: The New IVOA Document Repository",
+    "abstract": "The International Virtual Observatory Alliance (IVOA) develops standards that enable interoperability between astronomical data services and software. Maintaining these standards requires a reliable publication platform supporting document submission, metadata management, version tracking, and long-term accessibility.\nThe existing IVOA Document Repository combined a document upload interface with largely hand-maintained HTML pages. As the collection of IVOA standards and document versions across multiple publication stages and document types has grown, together with the need to accommodate additional resources such as errata and other associated digital artefacts, a more structured approach to repository management has become necessary.\nWe have developed a new system based on structured document metadata, initially populated from information extracted from the legacy repository. The system integrates with the existing ivoatex document preparation workflow and provides metadata validation and management, administrative review, and dynamic generation of document landing pages. The structured metadata model supports relationships between document versions, errata, supplementary resources, downloadable document packages, and associated resources such as XML schemas and bibliographic information from the NASA Astrophysics Data System (ADS).\nIn this contribution, we describe the current implementation of the new IVOA Document Repository, the design decisions adopted during its development, and ongoing extensions supporting the management and publication of IVOA standards documents and related digital artefacts.",
+    "type": "Poster",
+    "track": {
+      "name": "Usability, accessibility and security in astronomy software",
+      "slug": "8-usability-accessibility-and-security-in-astronomy-software"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "15:12",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Kalyani Pedamkar",
+        "code": "DBKXF3"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/KDNTCS/",
+    "image": {
+      "full": "/posters/KDNTCS.webp",
+      "thumb": "/posters/KDNTCS-thumb.webp"
+    }
+  },
+  {
+    "code": "PZMJUX",
+    "title": "What does 10M€ EC-funding buy you? (e.g.) RADIOBLOCKS!",
+    "abstract": "The four-year, 10M€, RADIOBLOCKS proposal was submitted by a consortium of 33 partners on 15 April 2022 and already accepted  by 26 July. Work started 1 March 2023, which means the project formally ends 28 February 2027 - just a few months after this ADASS conference.\n\nThis timeline allows me to discuss the actual outputs realised by the project because all the work is realistically already finished by now.\n\nRADIOBLOCKS aimed to improve key European radio-astronomical facilities (EVN, LOFAR, NOEMA, the Effelsberg-, Sardinia-, and Yebes radio telescopes, with a side-order of ALMA and SKA) along ALL the parts of the signal chain with the aim of improving field-of-view, sensitivity, and post-processing. A part of the project dealt with real hardware (actual receivers and hard-core semiconductor development), but with all signal chains moving from the analog to the digital domain asap, the project improves Digital Signal Processing across the board - in the widest possible meaning of the concept.\n\nOf particular interest to this audience would be the (extremely) high throughput data transport (200-400 Gbps) straight into GPU memory, GPU-based processing (amongst many others replicating the unique science capabilities of the CPU-based VLBI correlator SFXC), but also touching on the aspect of graph-based algorithm execution (Dask), cloud-native data formats (MeasurementSet v4 based on xarrays w/ zarr backend) and the impact of that on processing, and, finally, bringing state-of-the-art Event Horizon Telescope-specific advanced Bayesian-inference based calibration and imaging algorithms (including _dynamic_ imaging!) to the centimeter-wavelength VLBI community.\n\nMy colleagues Mark Kettenis and Aard Keimpema have submitted abstracts about the results of (highly) specific tasks in the project, but in my talk I can put those into wider perspective.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-02",
+    "start": "15:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Marjolein Verkouter",
+        "code": "KQRVAF"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/PZMJUX/",
+    "board": "P812",
+    "image": {
+      "full": "/posters/PZMJUX.webp",
+      "thumb": "/posters/PZMJUX-thumb.webp"
+    }
+  },
+  {
+    "code": "S8LFSQ",
+    "title": "xstar-tools: AI-Assisted Modernization of the XSTAR Photoionization Code",
+    "abstract": "Modernizing established astronomical software requires preserving scientific behavior while improving portability, maintainability, and integration with modern workflows. We present [xstar-tools](https://github.com/xstar-tools/xstar-tools), an open-source modernization of the FORTRAN XSTAR photoionization code through an AI-assisted software development. The project progressed from a pure Python implementation to an independent C++ engine with Python interfaces and native tools for generating XSPEC spectral tables.\n\nLarge language models assisted our code development, memory and runtime optimization, testing, and documentation under human supervision. Scientific qualification used FORTRAN XSTAR as the authoritative reference and examined atomic level populations, heating and cooling rates, convergence trajectories, radiative transfer, spectra, and output products. Validation combined numerical acceptance criteria with exact comparisons against accepted baselines. Qualification diagnostics exposed subtle differences in floating-point accumulation order, atomic level indexing, and the association of physical quantities with output records. Revised implementations were accepted only after passing the relevant qualification checks, with optimization changes additionally evaluated for memory use and runtime.\n\nThe xstar-tools suite also incorporates serial and local multiprocess execution, optional MPI execution for high-performance computing, and XSPEC table generation. Native packages are qualified on Linux, macOS, and Windows, with distribution through PyPI and conda-forge on supported platforms. These capabilities facilitate deployment and integration into other scientific applications while retaining the established XSTAR physical framework.\n\nWe discuss practical lessons from AI-assisted modernization, emphasizing the role of reference implementations, human evaluation, traceable diagnostics, and reproducible acceptance criteria in producing scientifically trustworthy software. Future development of xstar-tools will extend the framework toward post-processing hydrodynamic simulations.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for software engineering",
+      "slug": "6-ai-as-tool-for-software-engineering"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "15:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Ashkbiz Danehkar",
+        "code": "MRHQ9F"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/S8LFSQ/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/S8LFSQ/resources/xstar-tools_Danehkar_2026_fxiHLkA.pdf",
+    "image": {
+      "full": "/posters/S8LFSQ.webp",
+      "thumb": "/posters/S8LFSQ-thumb.webp"
+    }
+  },
+  {
+    "code": "JCHVNT",
+    "title": "Activities at the SOFIA Data Center: Preserving a rich legacy of observations for the scientific community",
+    "abstract": "The Stratospheric Observatory for Infrared Astronomy (SOFIA) concluded flight operations in 2022, but preserving and expanding its scientific legacy also requires continued development of software, data products, and services. This part of the effort at the SOFIA Data Center (SDC), has evolved into a collaborative software engineering project that combines the expertise of astronomers, former SOFIA developers and newly onboarded engineers, ensuring continuity while introducing modern development practices and new capabilities.\n\nA central aspect of this collaboration is the maintenance and evolution of the open-source SOFIA Redux data reduction framework. Managed through a Git-based development workflow, the project enables transparent collaboration on pipeline improvements, the integration of new processing features, and long-term software maintenance. Beyond the reduction software itself, the SDC has established reproducible mechanisms for publishing calibration reference files and derived data products through the DaRUS research data repository, providing persistent, citable access to the resources.\n\nCollaborative development also extends to new software components that were not part of the original mission. We present progress on the SOFIA Imager Pipeline, which processes raw tracker camera images into science-ready products enriched with observatory metadata, including telescope pointing verified by plate-solve, observatory status information, and observing parameters such as chop beam geometry. These data products form an additional layer of information that supports scientific analysis and will be integrated into the public SOFIA archive.\n\nTo maximize interoperability, we publish our products through Virtual Observatory standards, enabling seamless discovery and use of SOFIA data alongside other astronomical archives. We further demonstrate new community services developed by the SDC, including the ATRAN_SDC web service, which replaces the discontinued NASA ATRAN interface and ensures continued access to atmospheric transmission calculations for infrared astronomy.\n\nThis contribution illustrates how collaborative team building, open software development, reproducible data publication, and community-oriented services together enable the long-term sustainability of a scientific data center. We discuss the organizational and technical practices that allow software and expertise from an operational observatory to evolve into a sustainable infrastructure supporting the astronomical community well beyond the lifetime of the original mission.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-02",
+    "start": "15:36",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Benjamin Greiner",
+        "code": "PJJDKN"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/JCHVNT/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/JCHVNT/resources/ADASS2026_poster_BG_SDCso_EicmvmI.pdf"
+  },
+  {
+    "code": "WWKV97",
+    "title": "Explainable XRF Element Detection with Embedding-Space KNN and Physics-Based Masks for the HARLOCK Lunar Rover",
+    "abstract": "In astrophysics, Deep neural networks have achieved state-of-the-art performance in a variety of spectral analysis tasks. However, these models are often considered \"black boxes\", providing limited insight into predictions and requiring post-hoc tools for explanations. This lack of transparency can limit their adoption in scientific contexts, as in these environments interpretability is essential. This is one of the challenges in the development of RHEA, the Rare-earth \\& Heavy Elements Analyzer of the HARLOCK project within the PRORIS program. It combines gamma-ray spectroscopy, multispectral imaging, ultraviolet fluorescence screening and X-ray fluorescence analysis to identify Rare-Earth Elements (REE) deposits and associated elemental and mineralogical signatures across different spatial scales. \n\nIn this work, we propose a model-agnostic framework that converts any Convolutional spectral classifier into an explainable predictor without hindering its performance on multiple metrics, demonstrating it on a complete model working with attention masks for additional insight and training stability. Our approach exploits the Neural Network's latent representation and preservation of spatial features: after training, the final regression layer of the backbone model is removed and replaced by a K-Nearest Neighbors (KNN) regressor operating directly on the learned embedding space; as a result, every prediction is accompanied by an explanation in the form of the most similar spectra observed during training. This works particularly well thanks to a custom loss function designed to optimize the quality of the learned embedding space, without hindering performances. \n\nFurthermore, in our model, for each predicted element an associated attention mask is learned at training time starting from a physics-based initialization. This way, the framework provides, alongside instance-level explanations, easily readable heatmaps in the form of a mask-by-weights product, allowing users to trace model outputs back to representative examples in the training data and the relevant parts of the input used. Experimental results show that, in a regression task estimating the composition of soil samples, the average R2 score over the predicted elements stays around 0.9 for both the original approach and the explainable Deep kNN model (depending on the complexity of the task).\n\nOur proposal offers a practical path toward trustworthy AI for spectroscopy, combining the representational power of deep learning with the transparency of example-based reasoning.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "15:36",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Alberto Luise",
+        "code": "9HDDVC"
+      },
+      {
+        "name": "Ghulam Mustafa",
+        "code": "JQPUAM"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/WWKV97/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/WWKV97/resources/Poster_ADASS_CA63BZA.pdf"
+  },
+  {
+    "code": "N3LUNP",
+    "title": "AURIS.jl: A High Performance Radio Interferometry Software Suite",
+    "abstract": "Most radio astronomy software was designed and developed over 30 years ago before parallel processing was the norm. Therefore, it does not take advantage of the high-performance computing resources that are available today such as new software technology in the form of on-the-fly compilation and advanced numerical algorithms like auto-differentiation. **AURIS** (***A**stronomical **U**tilities for **R**adio **I**nterferometry and **S**imulation*) is a Julia software suite designed to use the latest technologies whether that be now or in the future. This enables AURIS to process large volumes of data efficiently and accurately. All algorithms are designed to take advantage of the inherently parallel nature of radio interferometry data by distributing computations across multicore CPUs and GPUs, when available. In addition, AURIS by default uses half-precision (16-bit) floats for most calculations, which reduces the memory footprint and processing time by half without a decrease in accuracy. As a result, the AURIS calibration pipeline is over fifty times faster than the NRAO CASA calibration pipeline for VLA data, reducing calibration time from several hours to several minutes. This talk will discuss how the various features of the Julia programming language and its associated packages are used to implement a modular, high-performance software suite that can quickly and easily adapt to the increasing volume and wide variety of radio data, such as the *next-generation VLA* (ngVLA) and the *Event Horizon Telescope* (EHT).",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-02",
+    "start": "15:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Paul Barrett",
+        "code": "8MVLF9"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/N3LUNP/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/N3LUNP/resources/AURIS_40Wex0G.pdf",
+    "image": {
+      "full": "/posters/N3LUNP.webp",
+      "thumb": "/posters/N3LUNP-thumb.webp"
+    }
+  },
+  {
+    "code": "WXZLEG",
+    "title": "Disentangling AGN and stellar contributions to the Cosmic Spectral Energy Distribution using GAMA, SWAGX, EMU and eFEDS",
+    "abstract": "A galaxy's total radiation arises from a combination of processes including star formation, dust and gas reprocessing, accretion, and magnetic interactions. While star formation typically dominates the optical and infrared emission of galaxies, AGNs contribute significantly at X-ray, mid-infrared, and radio wavelengths. Even a modest AGN contribution can bias key derived quantities such as stellar\nmass, star formation rate, and dust properties. To improve the accuracy of these measurements, it is essential to move beyond simple galaxy/AGN classifications and systematically disentangle their respective contributions. As a step toward this, we extend the GAMA catalog by incorporating new radio data from the SWAG-X survey and X-ray data from eROSITA for 5,258 sources within redshift z < 0.1 in the G09 region. We perform multiwavelength Spectral Energy Distribution (SED) fitting from ultraviolet to radio using ProSpect to derive stellar masses and star formation rates for these sources. For the first time, we present a Cosmic Spectral Energy Distribution (CSED) spanning X-ray to radio wavelengths, constructed by stacking the SEDs of individual galaxies, providing a more complete view of the integrated energy output of the nearby Universe.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-02",
+    "start": "15:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Kavin Kumar N R",
+        "code": "9KP7KH"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/WXZLEG/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/WXZLEG/resources/adass_poster_kavin_compre_Sdy8RqR.pdf",
+    "image": {
+      "full": "/posters/WXZLEG.webp",
+      "thumb": "/posters/WXZLEG-thumb.webp"
+    }
+  },
+  {
+    "code": "KR9DUR",
+    "title": "Machine-Learning-Based Event Classification of Terrestrial Gamma-ray Flashes with a Segmented Scintillator Detector",
+    "abstract": "Terrestrial Gamma-ray Flashes (TGFs) are sub-millisecond bursts of atmospheric gamma rays associated with thunderstorms and are of particular interest for space-based gamma-ray observations. Their detection from orbit requires the identification of brief gamma-ray signals in the presence of background, while operating under the limited computational and power resources typically available on CubeSat-class spacecraft. Within this context, the Gamma-Sky project is investigating low-power Edge-AI approaches for the real-time processing of high-energy radiation, using atmospheric X- and gamma-ray detector data. This work presents a machine-learning-based event-classification methodology for a CubeSat-class mission, exploiting the spatial and energy information provided by a segmented scintillator detector architecture. The proposed detector consists of multiple scintillator elements distributed throughout the detector volume rather than a single monolithic crystal. This configuration enables the identification of characteristic event patterns related to deposited energy, multiplicity of interactions, and spatial correlations between detector elements. The detector response is used to extract a compact set of event-level features suitable for machine-learning analysis. A dedicated algorithm is then developed to distinguish gamma-ray interactions from charged-particle-induced background, reducing the charged-particle contamination of a TGF event. The simulation results show that the spatial and energy-deposition information provided by the segmented detector offers effective discrimination between gamma-ray interactions and charged-particle-induced events. The processing chain is designed for resource-constrained onboard operation, with particular attention to reducing the computational and memory requirements of the trained models. Quantization and pruning are applied to obtain a lightweight implementation while preserving the event-classification capability. The resulting algorithm is suitable for deployment and experimental validation on embedded Edge-AI platforms. Preliminary results indicate the potential of combining detector segmentation, machine-learning-based event classification for background rejection, and efficient onboard processing in future compact high-energy space instruments dedicated to TGF observations.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-02",
+    "start": "15:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Antonio",
+        "code": "RPVX3U"
+      },
+      {
+        "name": "Ghulam Mustafa",
+        "code": "JQPUAM"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/KR9DUR/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/KR9DUR/resources/poster_A1_WdnAQhW.pdf"
+  },
+  {
+    "code": "VCESFR",
+    "title": "AI-Assisted PostgreSQL Engineering for NASA’s Near-Earth Object Surveyor Mission",
+    "abstract": "The ground system for NASA's NEO Surveyor mission at Caltech/IPAC uses a heavily partitioned PostgreSQL database and Python tooling. This poster describes practical experience using large language models for code review, library migrations, schema and query design, and moving application database access to a stored-procedure API. The engineer defines the task, selects relevant context, and verifies each proposal. Controlled tests showed that AI can detect problems in application code but can also produce incorrect results when important context is missing. The poster presents a workflow in which AI drafts solutions, tests provide evidence, and the engineer decides what to implement.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for software engineering",
+      "slug": "6-ai-as-tool-for-software-engineering"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-03",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Tatiana Mosheva",
+        "code": "N7DCVJ"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/VCESFR/",
+    "image": {
+      "full": "/posters/VCESFR.webp",
+      "thumb": "/posters/VCESFR-thumb.webp"
+    }
+  },
+  {
+    "code": "8MGFHV",
+    "title": "CANFAR Science Portal: Overcoming Challenges to Enable Next-Generation Astronomical Research",
+    "abstract": "The CANFAR Science Portal has emerged as a cornerstone computational resource for Canadian astronomers and their international collaborators. Over the past several years, it has grown into a primary hub for astronomical research in Canada and beyond. Along with this growth have come challenges in providing a stable and performant system to a large and computationally demanding user base. I will discuss these challenges, the scalability and optimization solutions we implemented, and observed user patterns, such as peak usage trends and common workflows. As the CANFAR Science Portal (Skaha) prepares to become a major component of the SKA project, lessons from our pioneering system can guide its wider adoption by member nations. Attendees will gain insights into the technical and operational strategies that have enabled CANFAR to scale effectively, as well as actionable advice for deploying similar systems globally.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-03",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Kevin Casteels",
+        "code": "SLHL3J"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/8MGFHV/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/8MGFHV/resources/CANFAR_Skaha_ADASS2026_po_UU5cMtN.pdf"
+  },
+  {
+    "code": "T7JFUD",
+    "title": "The use of container in ASKAPsoft deployment",
+    "abstract": "ASKAPsoft is a specialized software suite developed by CSIRO to process massive amounts of radio astronomy data collected by the Australian Square Kilometre Array Pathfinder (ASKAP) telescope. It is currently deployed in Pawsey's HPC facility called Setonix. This poster explains the role of container technology throughout the process of ASKAPsoft development and deployment. Container hides a lot of complexities, but also creates some of its own. We would like to share our experience in navigating through these complexities.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-03",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Paulus Lahur",
+        "code": "GCPHVR"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/T7JFUD/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/T7JFUD/resources/ADASS_poster_-_A1_portrai_3R4p8Lz.pdf",
+    "image": {
+      "full": "/posters/T7JFUD.webp",
+      "thumb": "/posters/T7JFUD-thumb.webp"
+    }
+  },
+  {
+    "code": "N79KYE",
+    "title": "Machine Learning Models for Predicting the COSI Background for Gamma-Ray Burst Detection",
+    "abstract": "The Compton Spectrometer and Imager (COSI) is a NASA Small Explorer mission designed to study the MeV gamma-ray sky, including gamma-ray bursts (GRBs), compact objects, nuclear emission lines, and other high-energy sources. Reliable background prediction is important for transient searches because the background changes with spacecraft position, pointing direction, and time. The aim of this paper is to develop a probabilistic machine-learning framework for COSI background prediction to support GRB detection and localization. The framework consists of four main stages. The Angular Resolution Measure (ARM) method is used to filter the event data and generate light curves for different sky positions following the HEALPix grid. These background light curves are then used to train a probabilistic regression model and derive significance thresholds from its predictive distribution. The trained model is applied to the same sky positions within the COSI field of view to estimate the expected background. The observed light curves are then compared with the predicted background and significance thresholds to search for significant excesses associated with GRBs and support their detection and localization. In this work, we focus on developing and evaluating the background regression models using simulated DC4 background events and spacecraft information. For the regression analysis presented here, we use an ARM-selected background light curve with one-second bins. Spacecraft livetime information is used to select valid observing periods and remove bins close to South Atlantic Anomaly boundaries. The model inputs include the time elapsed since the start of the selected DC4 modeling interval, spacecraft altitude, the Earth-zenith direction, and spacecraft pointing orientation. The spacecraft pointing directions are originally given in Galactic coordinates and are represented in the models using Cartesian components. From the DC4 dataset, two consecutive orbits are reserved as a held-out temporal test block, while the remaining data are randomly divided into training and test sets. Only background events are used for model training and evaluation. We compare Poisson regression with a four-component Gaussian Mixture Regression (GMR) model, with the GMR providing a more flexible predictive distribution. The current results show that both models follow the large-scale evolution of the ARM-selected background. As future work, we plan to evaluate the trained background prediction models using simulated GRBs to measure their performance for transient detection and localization.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-03",
+    "start": "10:12",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Ghulam Mustafa",
+        "code": "JQPUAM"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/N79KYE/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/N79KYE/resources/Machine_Learning_COSI_Bac_ziuHRZn.pdf"
+  },
+  {
+    "code": "EV3HFD",
+    "title": "Status of the IVOA Technical Standards and Processes as of 2026",
+    "abstract": "In recent years the Technical Coordination Group ([TCG](https://wiki.ivoa.net/twiki/bin/view/IVOA/IvoaTCG)) of the International Virtual Observatory Alliance ([IVOA](https://ivoa.net)) has continued the activities in developing community open standards targeted at establishing an interoperable scenario in the general astrophysical research domain.\nAlongside the continuous work of revising or defining standards, activity has focused on requirements from research sub-domains that are re-emerging or have previously received less attention (such as time-domain astronomy or high-energy astrophysics), on technical challenges arising from new information system technologies (like OpenAPI), and on new data formats and distribution paradigms (including increased use of tessellation and distributed solutions). The [TCG](https://wiki.ivoa.net/twiki/bin/view/IVOA/IvoaTCG) has also discussed organisational aspects, possible improvements, and challenges of the [IVOA](https://ivoa.net/) standardisation process itself.\nThis contribution provides a brief overview of all of the above and tries to identify the major priorities that the [TCG](https://wiki.ivoa.net/twiki/bin/view/IVOA/IvoaTCG) might have to face in the oncoming years, balancing the available efforts volunteered by member projects and participating projects against the requirements for new or renewed standards and their uptake.",
+    "type": "Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-03",
+    "start": "10:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Marco Molinaro",
+        "code": "KTHVMT"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/EV3HFD/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/EV3HFD/resources/Molinaro-IVOA-TCG-2026_W2yOy5h.pdf",
+    "image": {
+      "full": "/posters/EV3HFD.webp",
+      "thumb": "/posters/EV3HFD-thumb.webp"
+    }
+  },
+  {
+    "code": "XZAGQJ",
+    "title": "Visual anomaly detection at scale using ThumP!",
+    "abstract": "The now operational Rubin LSST monitors the southern night sky and is forecast to send 10 million alerts (objects with significant changes in brightness) per night to brokers such as Fink. Fink is tasked with processing and filtering the alert-stream to manageable amounts for the individual researcher. During the first period of public Rubin alerts (February 2026), over 800 thousand alerts were streamed through the pipeline. Discovering anomalies and assessing image quality at scale in the real-time data streams of the Fink ecosystem is challenging.\n\nThumP! (Thumbnails? Prescreen!) was planned, implemented, and deployed successfully to visualize the first public alerts streaming through Fink providing confidence in the nominal operation and performance of the system. In the process ThumP! aided the discovery of 50 new supernova candidates and helped evaluate stream filters for good detections. This was achieved through ThumP!’s fast, dynamic visualization of Rubin thumbnails allowing the simultaneous (multi-user), parallel inspection and comparison of a large number (30 per minute) of candidate images. Individual visualizations can be adjusted interactively for easier comparison, annotated for quality control, and exported for further inspection or triggering follow-up with other telescopes. During the first public alerts stream ThumP! was deployed on a large-format tiled display wall, allowing  the local Fink team to inspect 12 000 alerts in a couple of hours.\n\nThumP! is open source and publicly accessible on the web.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-03",
+    "start": "10:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Lukas Steinwender",
+        "code": "VD33Y8"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/XZAGQJ/"
+  },
+  {
+    "code": "FPG39R",
+    "title": "MANNA: an MCP Architecture for NOIRLab, NRAO, and additional Archives",
+    "abstract": "Astronomical data archives are an invaluable resource for research in modern astronomy. While many archives implement the same set of standards defined by the International Virtual Observatory Alliance (IVOA), differences in underlying data and architectural implementations necessitate significant archive-specific knowledge. This requirement can impede research, especially in multiwavelength astronomy. AI agents offer a promising way to lower this barrier, but without structured access to archive services and metadata they must rely on general knowledge or web searches, which are often incomplete or outdated for a given archive, and the searching itself costs time and tokens. To address this problem, we developed MANNA (MCP Architecture for NOIRLab, NRAO, and additional Archives), a Model Context Protocol (MCP) server tailored to IVOA-based astronomical archives that provides tools for archive discovery and data querying.  We found that MANNA improved performance across an evaluation suite of one open-weight and three Anthropic Claude models, increasing efficiency for all models and substantially improving accuracy for the smallest Claude model. This effect was magnified when limits on turns and time per task were applied to evaluated tasks, supporting the practical use of MANNA under budgetary or time-related pressure. Although MANNA was developed  mainly for the NOIRLab and NRAO archives, it is a flexible framework that is extensible to any IVOA-based archive.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as a tool for data discovery and data management",
+      "slug": "4-ai-as-a-tool-for-data-discovery-and-data-management"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-03",
+    "start": "10:36",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Dan Gause",
+        "code": "GMPRNC"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/FPG39R/"
+  },
+  {
+    "code": "VPGBBE",
+    "title": "Exploring Roman Space Telescope Data in the Cloud: Integrating ipyaladin and Jdaviz in the Roman Research Nexus",
+    "abstract": "The Nancy Grace Roman Space Telescope, launched on August 30, 2026, will return a data volume far exceeding that of Hubble and JWST combined, including wide-field images, spectroscopic data, and derived catalogs. The Mikulski Archive for Space Telescopes (MAST) serves this data via Amazon Web Services, and provides the [Roman Research Nexus](https://roman-docs.stsci.edu/data-handbook/roman-research-nexus) (RRN), a cloud-based science platform based in AWS, to facilitate exploration and analysis near the data.\n\nThis poster will focus on the integration of two community visualization tools, [`ipyaladin`](https://github.com/cds-astro/ipyaladin) and [`Jdaviz`](https://jdaviz.readthedocs.io/en/stable/), within the RRN's JupyterLab environment, letting astronomers explore Roman images, spectra, and catalogs side by side. Using sidecar and custom widgets, a flexible layout allows both tools to stay visible alongside notebook code, with the ability to synchronize viewport coverage, as well as source catalog and observation footprint display and selection. In the `ipyaladin` viewer, users can browse Roman imaging through [Hierarchical Progressive Surveys (HiPS)](https://aladin.cds.unistra.fr/hips/) and search data holdings directly from the displayed sky position.\n\nWe also describe our pipeline for generating these HiPS surveys from Roman image data using `astropy`'s `reproject` package at scale on AWS, touching on the cloud storage architecture, generation cost, and technical challenges of producing HiPS products at Roman's data volume.\n\nTogether, these capabilities give Roman researchers an integrated, cloud-native environment for visually exploring and analyzing imaging and spectroscopic data side by side, without needing to move data off the platform.",
+    "type": "Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-03",
+    "start": "10:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Tom Donaldson",
+        "code": "XNTHPR"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/VPGBBE/",
+    "image": {
+      "full": "/posters/VPGBBE.webp",
+      "thumb": "/posters/VPGBBE-thumb.webp"
+    }
+  },
+  {
+    "code": "Y8MJEQ",
+    "title": "Image-to-Catalogue: End-to-End Source Finding with a 3D large vision model",
+    "abstract": "The next generation of radio astronomy telescopes, including the Square Kilometre Array (SKA), will generate unprecedented data volumes, requiring highly automated and reliable approaches for source finding and catalogue construction. Existing neutral hydrogen (HI) source-finding methods, including numerical algorithms and machine-learning approaches, have demonstrated strong performance but often rely on survey-specific preprocessing, parameter tuning, or architectures that do not fully exploit the three-dimensional structure of spectral-line data. We present the HI Segment Anything Model (HISAM), an automated image-to-catalogue pipeline for HI source finding based on a pretrained three-dimensional large vision model. HISAM adapts a volumetric segmentation architecture to HI spectral-line cubes through domain-specific modifications and fine-tuning, and integrates source segmentation with catalogue construction and false-positive rejection to transform input image cubes into science-ready source catalogues. We evaluate HISAM on the SKA Science Data Challenge 2 simulation. HISAM achieves competitive completeness and reliability for sources with sufficiently strong signals, while its overall completeness decreases when evaluated across the full source population.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-03",
+    "start": "10:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Li Wang",
+        "code": "EDRMN7"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/Y8MJEQ/"
+  },
+  {
+    "code": "GCHWPD",
+    "title": "XPhotonBank: Enabling Scientific Discoveries through Photon-Level Management of Einstein Probe X-ray Data",
+    "abstract": "The Einstein Probe (EP) is an interdisciplinary mission dedicated to time-domain and X-ray astronomy. Equipped with a wide-field lobster-eye X-ray focusing imager, the mission is capable of detecting up to 50 million photon events per day. Currently, the EP data processing pipeline adopts the observation ID as its basic data processing unit, it first rasterizes photon events into images, followed by source detection and the extraction of light curves and spectra. However, the use of a fixed exposure time in this workflow leads to two key limitations: it results in the omission of short-time-scale transients and faint sources, while also making it challenging to study the long-term evolutionary processes of celestial sources. To address these limitations and facilitate more flexible and efficient data analysis, we leveraged time-series database technology to develop XPhotonBank—a specialized database that organizes EP observation data at the photon-level granularity. Based on this database, we further developed a suite of data processing tools capable of generating customized scientific products (including images, light curves, and spectra) with user-defined time scales. Leveraging this framework, we implemented two complementary analysis approaches, data stacking and density-based clustering, which led to the discovery of a series of faint sources and short-duration burst events that were undetected in individual observations. These results demonstrate the potential of photon-level data organization to significantly enhance the scientific capabilities of the Einstein Probe or other high energy mission like eROSITA.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-03",
+    "start": "10:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Zhen Zhang",
+        "code": "YFPZJ7"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/GCHWPD/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/GCHWPD/resources/XPhotonBank_ZhenZhang_2VWHCut.pdf",
+    "board": "P805",
+    "image": {
+      "full": "/posters/GCHWPD.webp",
+      "thumb": "/posters/GCHWPD-thumb.webp"
+    }
+  },
+  {
+    "code": "RMAQFN",
+    "title": "Meerkat: An Operational Software System for Automated Imminent Impactor Detection and Community Alerting",
+    "abstract": "The increasing discovery rate of near-Earth objects requires software systems capable not only of orbit analysis, but also of continuous data ingestion, automated decision-making, and rapid dissemination of actionable information. We present Meerkat Asteroid Guard [1], the European Space Agency's operational imminent impactor monitoring system, developed and maintained at the Near-Earth Object Coordination Centre (NEOCC). Since becoming operational in 2021, Meerkat has contributed to the identification and follow-up of all known pre-impact asteroid discoveries detected during its operational lifetime.\n\nMeerkat continuously monitors newly reported objects on the Minor Planet Center's Near-Earth Object Confirmation Page, automatically detecting updates, retrieving observations, and executing orbit determination and impact assessment workflows. The system produces a range of data products, including impact probabilities, uncertainty visualizations, follow-up pointing recommendations, impact corridors, and object classification summaries, which are distributed to analysts and observers in near real time.\n\nThis contribution focuses on the software architecture and operational design of the system rather than on the underlying orbital algorithms. Meerkat employs a deliberately simple and maintainable architecture based on containerized services, automated pipelines, multiprocessing, and CI/CD practices. The software is designed for robustness, transparency, and ease of maintenance, allowing reliable 24/7 operation while remaining adaptable to evolving planetary-defence requirements.\n\nParticular attention is given to the alerting framework. Through email notifications, messaging systems, and automated phone calls, Meerkat acts as a catalyst for rapid international follow-up campaigns. Through dedicated mailing lists, alerts are distributed to professional and amateur astronomers across multiple continents, enabling rapid follow-up observations to refine orbit solutions and confirm or rule out potential impact scenarios. Meerkat therefore provides a practical example of how astronomy software can bridge automated data processing and global scientific collaboration in a time-critical operational environment.\n\n[1] https://doi.org/10.1007/s40295-025-00560-0",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-03",
+    "start": "15:15",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Francesco Gianotto",
+        "code": "RT93KR"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/RMAQFN/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/RMAQFN/resources/Gianotto_ADASS_2026_Meerk_jzQdArw.pdf",
+    "image": {
+      "full": "/posters/RMAQFN.webp",
+      "thumb": "/posters/RMAQFN-thumb.webp"
+    }
+  },
+  {
+    "code": "HUL7SV",
+    "title": "The SRCNet Federated Execution Framework: Bringing Scientific Workflows to the Data",
+    "abstract": "The SKA Regional Centre Network (SRCNet) will support scientific analysis through a federation of independently operated computing and storage facilities. Executing workflows across this infrastructure requires a common interface that accounts for data location, heterogeneous resources, and local scheduling policies.\n\nWe present the SRCNet Federated Execution Framework, a prototype that connects scientific workflow submission to execution on participating sites. A Computing Broker identifies eligible sites using resource capabilities and data locality.\n\nSite-level Job Gateways provision pilot workers through local Kubernetes or Slurm infrastructure. HTCondor then matches queued workflow tasks to compatible pilots once resources become available, a mechanism known as late binding. This decouples task submission from worker allocation while allowing each site to retain control over its resources and scheduling policies.\n\nThe poster explains the architecture and follows a workflow from submission through site eligibility checks, pilot provisioning, execution, and status reporting. We illustrate the approach with the ICAL/Rapthor radio-interferometric calibration and imaging workflow, drawing on the prototype’s multi-node execution demonstration. We also discuss integration challenges involving authentication, delegated credentials, data access, and the boundary between federated services and site operations.\n\nWe conclude with lessons from building the prototype and priorities for operational deployment, including broader site validation, robust data staging, and execution identity management. The framework offers a concrete example of how existing scheduling technologies can support a common scientific execution service across heterogeneous astronomical computing facilities.",
+    "type": "Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-03",
+    "start": "15:15",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Kim Hoogenberg",
+        "code": "FD98UE"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/HUL7SV/",
+    "image": {
+      "full": "/posters/HUL7SV.webp",
+      "thumb": "/posters/HUL7SV-thumb.webp"
+    }
+  },
+  {
+    "code": "FUWBLF",
+    "title": "Use of the AI for SRCNet development",
+    "abstract": "The SKA Regional Centre Network (SRCNet) is entering its Science Verification phase, a period defined by tight milestones and a growing surface of interdependent services — registration, ingestion, metadata, and data access components among them — that must mature quickly without compromising long-term maintainability. This contribution reports on the use of AI coding assistants across SRCNet software development teams to meet these constraints. Rather than treating AI-generated code as a shortcut, our approach centers on structured prompting: requests are framed to explicitly encode target architecture and design patterns, module boundaries, documentation standards, and test coverage from the outset, so that output is usable beyond a first draft. In practice, AI-assisted code plays its strongest role in initial prototyping — standing up service skeletons, exploring API contracts, and validating design choices quickly — after which ownership passes to the responsible team for integration, hardening, and long-term maintenance. This handoff surfaces a recurring tension: AI tools can produce substantial, working code far faster than a team can meaningfully review it, and oversized reviews risk becoming a bottleneck or a rubber stamp, undermining the quality controls the Science Verification milestones depend on. We discuss practices adopted to mitigate this — smaller, prompt-scoped increments, review checklists aligned to architectural intent, and tests generated alongside code rather than after it — while showing that, managed this way, overall development velocity across SRCNet components can increase substantially. We conclude with early observations on where this approach has been most effective and where human architectural judgment remains indispensable.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for software engineering",
+      "slug": "6-ai-as-tool-for-software-engineering"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-03",
+    "start": "15:15",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Jesus Salgado",
+        "code": "LTCM8E"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/FUWBLF/",
+    "image": {
+      "full": "/posters/FUWBLF.webp",
+      "thumb": "/posters/FUWBLF-thumb.webp"
+    }
+  },
+  {
+    "code": "QSYMQC",
+    "title": "Bring Your Own Model: Treating AI as a Replaceable Part of the Science Platform",
+    "abstract": "Two options exist today, and each falls short in a different direction. Point a commercial AI application at data held on a science platform and the science turns into plumbing: credentials, staging, transfers, all for a dataset that should never have moved. Run a coding CLI inside the platform instead and it sits beside the data but sees only a shell and a filesystem — nothing of the archive, the session lifecycle, or the access rules governing them. The first cannot reach the data; the second cannot see the platform. Neither was built for research.\nThe scientific workbenches now appearing run on the researcher's own machine or cluster so the data need not move. But their domain readiness is built for the life sciences, and the integration path is proprietary: the platform arrives as a plug-in inside the vendor's application, and research context accumulates in that vendor's formats. Astronomy already has platforms tuned over decades to its data models, access rules and standards; we should not have to migrate onto a general-purpose workbench to benefit from these models — the models should meet our platforms on our terms.\nI illustrate this with a client over CANFAR, Skaha and the CADC archives whose agent tools are not a parallel API: each performs the same action as a control in the interface, so astronomers and agents share one surface. Both launch, monitor and stop interactive and headless sessions, and the agent can task one with a script in an image carrying the astronomy libraries. Retrieved observations collected in a research area, products land in VOSpace, FITS and cube viewers give a fast visual read the model can be asked to assess, and workflows serve as written protocols the agent follows.\nAs this work is ongoing, the exact final vision for the user-facing product is still actively taking shape. Rather than presenting a finished system, we present our integration across CANFAR, Skaha, and CADC as the foundation and core of a future AI-enabled science platform. We bring these developments to ADASS to open a dialogue with the community—seeking to learn how researchers envision the natural blend of AI models and research workflows, and how our shared platforms can best deliver that vision.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "AI as a tool for data discovery and data management",
+      "slug": "4-ai-as-a-tool-for-data-discovery-and-data-management"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-03",
+    "start": "15:27",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Serhii Zautkin",
+        "code": "RVNAQU"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/QSYMQC/"
+  },
+  {
+    "code": "A8BRSC",
+    "title": "Machine Learning Methods for Imaging with Interferometers",
+    "abstract": "We are on the cusp of astronomical analysis becoming data-swamped, with several next-generation instruments (SKA, Next Generation Very Large Array (ngVLA), Next Generation Event Horizon Telescope (ngEHT), etc.) related to radio-interferometry that are either in their final stages of planning or already under commission. The current method for cleaning dirty radio images is slow and difficult to automate, making it extremely challenging to handle large quantities of data. This will create a bottleneck in the data pipeline when the next-generation interferometers are finished being built. In order to not limit the discoveries that will come from these next-generation instruments, a more efficient method for processing data needs to be created. In this project, we use synthetic radio interferometry data to train a machine learning algorithm capable of deconvolving (‘cleaning’) dirty radio images.  The goal of this project is to develop an automated framework that is faster and more accurate compared to current image cleaning techniques.",
+    "type": "Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-03",
+    "start": "15:27",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Christopher Danner",
+        "code": "9EHE8B"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/A8BRSC/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/A8BRSC/resources/ADASS_Poster_2026_Final_pGv9tH6.pdf",
+    "board": "P405",
+    "image": {
+      "full": "/posters/A8BRSC.webp",
+      "thumb": "/posters/A8BRSC-thumb.webp"
+    }
+  },
+  {
+    "code": "VD33TX",
+    "title": "Pervasive AI as A Second Enclosure Movement",
+    "abstract": "What is the relationship between artificial intelligence (AI) and the scientific and scholarly enterprise? I offer an answer to this question that draws on the history and scholarship of *the commons*. Historically, commons were shared agricultural land, most famously in preindustrial England. The term “commoner” simply refers to a person whose way of life depended upon the commons. In this sense, commoners and the historical English commons no longer exist, but not because of the well-known “tragedy of the commons.” Rather, the *enclosure movement* systematically converted them into private property of the wealthy and in so doing destroyed the commoners' way of life.\n\nThere are still commons today, but the most important ones consist of information, not farmland. They are cultural treasures like open-source software, Wikipedia, and the scholarly literature. From this perspective, scientists and academics are the new commoners, engaging in a distinctive “peer production” process that sustains the information commons. Although the tightening of intellectual property (IP) laws in the twentieth century has been referred to as a “second enclosure movement,” I argue that the rise of pervasive AI — ingesting essentially all existing information commons as input, and flooding them with new outputs — better deserves this moniker. In particular, generative AI interacts with peer production in such a way as to threaten the commons in a way that IP restrictions do not. It requires no extrapolations of the capabilities of AI systems to sketch a future in which the AI industry effectively appropriates the public wealth of the commons for private gain, in the process effectively destroying the commons and the way of life of those who depend upon them.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-03",
+    "start": "15:39",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Peter K. G. Williams",
+        "code": "WWKQPF"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/VD33TX/",
+    "image": {
+      "full": "/posters/VD33TX.webp",
+      "thumb": "/posters/VD33TX-thumb.webp"
+    }
+  },
+  {
+    "code": "NUWGT3",
+    "title": "Astronomy and Computing: strengthening the link between astronomy, software and computation",
+    "abstract": "Astronomy and Computing (ASCOM) was established in 2013 as a dedicated peer-reviewed venue for computational methods, software, data and infrastructure in astronomy. Born from discussions within the ADASS community, the journal continues to provide a home for research outputs that do not always fit naturally within traditional astronomy journals, while its scope has evolved alongside the rapidly changing landscape of astronomical computing.\n\nIn this poster, we present the current status and recent evolution of ASCOM. The journal has continued to grow in visibility and impact, reaching a 2025 Journal Impact Factor of 2.6 and returning to the second quartile of journals in Astronomy & Astrophysics. ASCOM received more than 1,700 citations in 2025, with its work cited extensively by the major astronomy journals, reflecting the increasing integration of computational methods and software into mainstream astronomical research. Its international community also continues to broaden, with authors from more than 60 countries and regions contributing over the most recent three-year period.\n\nWe highlight recent developments in the journal's scientific scope, publication model and Special Issues, and discuss how ASCOM is responding to emerging priorities including artificial intelligence and machine learning, large-scale computing and data processing, and sustainable scientific software and documentation. We also examine opportunities to further strengthen the connection between publication, software and reproducible research.\n\nAs ASCOM originated within ADASS, feedback from this community remains central to its evolution. The poster will provide an opportunity to discuss how the journal can best support astronomers, research software engineers and computing specialists, and how its scope should evolve to meet the needs of increasingly data- and software-intensive astronomy.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-03",
+    "start": "15:42",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Claudia Lagos",
+        "code": "ZJNWZP"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/NUWGT3/",
+    "board": "P810",
+    "image": {
+      "full": "/posters/NUWGT3.webp",
+      "thumb": "/posters/NUWGT3-thumb.webp"
+    }
+  },
+  {
+    "code": "LSM8RX",
+    "title": "XMM-NEWTON SCIENCE ARCHIVE: Forthcoming Release of the New Angular-Based Portal",
+    "abstract": "The Science Archives, managed by the ESAC Science Data Centre (ESDC), continue to act as the primary repositories for ESA mission data, preserving scientific knowledge and ensuring accessibility for the research community worldwide. A key highlight in 2026 will be the launch of the new XMM-Newton Science Archive (XSA). Created in collaboration with mission experts, the new XSA introduces a next-generation approach based on  scientific use cases and workflows. The launch is planned for December 2026.\n \nThe modern interface will offer seamless exploration of X-ray sources with dedicated sections for exploring the available mission data, the XMM catalogs, the high level science products, and the image gallery. Built with the Angular framework, the archive benefits from a robust and maintainable architecture, a modular approach, enhanced performance, reusable components and a responsive user interface, which will provide a major improvement in the user experience. The new XSA follows concepts and reusable widgets now adopted across other ESA Science Archives, while also benefiting from shared components developed in parallel by other teams.\n \nThis release reflects ESA’s ongoing commitment to innovation, software excellence, and global collaboration in enabling access to and exploration of astronomical data.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-03",
+    "start": "15:42",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Antonio Siles",
+        "code": "KLZDPW"
+      },
+      {
+        "name": "Antonio Ortega",
+        "code": "BUPKZ3"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/LSM8RX/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/LSM8RX/resources/ADASS_XMM_2026_FXziqKX.pdf",
+    "image": {
+      "full": "/posters/LSM8RX.webp",
+      "thumb": "/posters/LSM8RX-thumb.webp"
+    }
+  },
+  {
+    "code": "LLETHA",
+    "title": "Pulsar Signal Segmentation and Analysis using Custom Convolutional Filter Stacks",
+    "abstract": "We present an ongoing investigation of a non-learnable approach for pulsar-signal detection using handcrafted 2D line filters. The method applies Gaussian ridge filters across multiple scales and orientations to identify the characteristic dispersed structures of pulsars in dynamic spectra. Small random perturbations are introduced into the filters, creating a noise-augmented filter bank whose responses are subsequently aggregated to reinforce consistent signal structures while suppressing uncorrelated fluctuations. \nThe filter responses are processed through a sequence of sigmoid activation, nonlinear transformation, multi-scale summation, binarization, orientation alignment, and peak-prominence selection. This adaptive processing identifies orientations that provide consistent evidence for a pulsar signal without relying on learned convolutional kernels.\nThe current results on the B0531+21 dataset demonstrate the potential of this handcrafted filtering approach, with an overall F1-score above 90%.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-03",
+    "start": "15:51",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Tanumoy Saha",
+        "code": "GCFBQX"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/LLETHA/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/LLETHA/resources/poster_ADASS_perth_SAHA_A_e5YC0Vg.png",
+    "image": {
+      "full": "/posters/LLETHA.webp",
+      "thumb": "/posters/LLETHA-thumb.webp"
+    }
+  },
+  {
+    "code": "QNDEEP",
+    "title": "BIAS (Bias Images As Syntax): An AI Co-designed Esolang with Python and TypeScript Interpreters",
+    "abstract": "BIAS (Bias Images As Syntax) is a programming language that encodes logic as CCD bias frames. Inspired by Piet, it was created as an exercise in experimental visual programming.\n\n   BIAS is capable of general‐purpose programming, but is classified here as an esoteric programming language (esolang) due to its unconventional visual syntax. The language was developed with assistance from Microsoft Copilot.\n\n   BIAS was not intended to be a parody (e.g., INTERCAL), a work of software art (e.g., Piet), or a deliberate obfuscation (e.g., MALBOLGE). BIAS was a low‐stakes project for testing the capabilities of Microsoft Copilot, an AI tool needing no investment of time or money before use, in contrast to locally‐trained large language models or fee‐based services.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for software engineering",
+      "slug": "6-ai-as-tool-for-software-engineering"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-04",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Travis Stenborg",
+        "code": "LSVHWP"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/QNDEEP/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/QNDEEP/resources/poster-bias-images-as-syn_FOB7OyW.pdf"
+  },
+  {
+    "code": "QWVPDJ",
+    "title": "Modeling the sky in VLT/ESPRESSO spectra",
+    "abstract": "Accurate sky subtraction is essential for precise flux calibration in high-resolution spectroscopy. For the ESPRESSO spectrograph at the Very Large Telescope (VLT), the official ESO pipeline provides two sky-subtraction strategies: \"pixel-by-pixel\" subtraction and sky modeling via the \"smoothed\" method. While pixel-by-pixel subtraction affects the final signal-to-noise ratio in particular for faint targets, the smoothed method leads to a systematic underestimation of the observed flux. This \"zero-level problem\" manifests as a clear negative offset in saturated absorption regions of quasar spectra, driven by flux error distributions and their subsequent propagation during exposure combination.\nIn this poster, I will present an alternative approach: the running median method. By constructing a robust sky continuum model, this method is designed to overcome the limitations of both official sky-subtraction strategies. Applying this technique to a sample of 23 high-redshift, ultra-high-resolution quasar spectra, I will evaluate its accuracy, performance, and limitations. From this analysis, I will draw general conclusions to inform the development of future data reduction pipelines for high-resolution spectrographs at the ELTs.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-04",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Simona Di Stefano",
+        "code": "PU7EPB"
+      },
+      {
+        "name": "Giovanni Lacopo",
+        "code": "DLPAFQ"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/QWVPDJ/"
+  },
+  {
+    "code": "XVQFKH",
+    "title": "The real-time visibility reception pipeline for the SKA observatory",
+    "abstract": "This talk presents the visibility reception pipeline, the distributed component in charge of continuously receiving the stream of correlated visibility data produced by the SKA Low and SKA Mid telescopes, and multiplexing it for different purposes, including storage, display and real-time calibration. With future data rates in the hundreds of GB/s, the pipeline sits at the front of the data flow of the Science Data Processor, and therefore it has been one of the key pieces of software running in the observatory since construction began.\n\nThe talk includes a description of the context and architecture of the pipeline, the requirements it needs to meet, the challenges it still needs to tackle, as well as delving into the many different technologies used across its internal components.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-04",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Rodrigo Tobar",
+        "code": "RK9PGB"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/XVQFKH/",
+    "image": {
+      "full": "/posters/XVQFKH.webp",
+      "thumb": "/posters/XVQFKH-thumb.webp"
+    }
+  },
+  {
+    "code": "C7GXZ3",
+    "title": "Quantum Annealing for Gamma-Ray Source Detection and Localization with AGILE Data",
+    "abstract": "The detection and localization of gamma-ray sources is a complex optimization problem, requiring the estimation of parameters such as the source flux, background, position, and detection significance. AGILE is an Italian Space Agency mission whose Gamma-Ray Imaging Detector (GRID) surveyed the sky in the 30 MeV-50 GeV band and produced photon count maps. Detecting gamma-ray sources in this data can be challenging because of low photon counts, which require specific methods to separate the source from the diffuse background. For this reason, the classical approach to detect and localize gamma-ray sources is the Maximum Likelihood Estimation (MLE). This fitting problem can be seen as an optimization over the model parameters, making it a candidate for quantum annealing, a computational paradigm that solves optimization problems by encoding them into the ground state of an Ising Hamiltonian. This technique does so through a slow, controlled process that evolves into the minimum-energy configuration, which then encodes the solution to the optimization problem, representing a promising approach in the current Noisy Intermediate-Scale Quantum era. In this work, we reformulate the standard likelihood analysis of AGILE-GRID data as a Quadratic Unconstrained Binary Optimization (QUBO) problem, making the cost function quadratic and expressing the model parameters in binary form, as required by a quantum annealer. This approach could speed up the analysis of complex data, where the classical MLE fit becomes slow or may fail to converge.\nWe solve this task with simulated quantum annealing and benchmark it against the classical pipeline implemented in AGILEpy, the official analysis library for the AGILE mission, on 200 simulated observations at extragalactic latitude. Both the classical and quantum approaches recover the source flux accurately, with a systematic error of +2.8% for the former and -0.3% for the latter. For the isotropic background, the mean raw residuals are -0.87 (QUBO) and -0.58 (classical). We also found that the QUBO identifies the correct position among the 81 candidate positions on a grid with of 0.5° resolution in 90% of the maps. These results show that the quantum approach achieves accuracy close to that of the classical pipeline, a promising result for applying quantum annealing to gamma-ray source detection and localization. As a next step, we plan to test the method on real quantum annealing hardware.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-04",
+    "start": "10:12",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Alessandro Rizzo",
+        "code": "UBJMNS"
+      },
+      {
+        "name": "Ghulam Mustafa",
+        "code": "JQPUAM"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/C7GXZ3/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/C7GXZ3/resources/Poster_ADASS2026_annealer_tEmVfLF.pdf"
+  },
+  {
+    "code": "7GZ8G8",
+    "title": "Free your team's knowledge with Cambium - a static site generator for scientific documentation",
+    "abstract": "Communication remains the largest barrier to collaboration in science. Astronomy as a field has an enormous wealth of information, compute power, and human drive, but often lacks the ability to connect these together in an efficient way. Typical efforts to coordinate technical and logistical information within and across scientific teams are wildly disparate, require significant overhead, or force scientists to conform to structures not relevant to their needs. \n \nWe present Cambium, a static site generator intended to disperse information with as little effort as possible. Cambium works alongside tools familiar to the astronomy community: install with Python, write in Markdown, collaborate with Git, and use any webhost you like. Cambium's focus is to simplify information sharing, by making the transition from individualized notes and scattered datasets to group documentation with annotated data releases as seamless as possible. Cambium can reduce scientific teams' dependence on high-inertia tools such as MediaWiki and Sphinx. Further, Cambium incorporates science-dedicated tooling - with the Astropy toolset Cambium will build in previews for FITS files and data tables out of simple Markdown links. Cambium makes it easy for teams of any size, from small to astronomical, to communicate and collaborate without requiring their members to adopt an alien workflow.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-04",
+    "start": "10:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Tai Withers",
+        "code": "QPGWWK"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/7GZ8G8/",
+    "image": {
+      "full": "/posters/7GZ8G8.webp",
+      "thumb": "/posters/7GZ8G8-thumb.webp"
+    }
+  },
+  {
+    "code": "XWZK7V",
+    "title": "NED's new API",
+    "abstract": "The NASA/IPAC Extragalactic Database has been serving the astronomy community for over 36 years. We have done a major database refactoring and subsequently the API has gone through a major rewrite. We have also updated the Python Astroquery.ipac.ned package to use the new API. We urge the community to switch to the new API since the old API has been deprecated and could not access any new data ingested since January 2026.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-04",
+    "start": "10:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Xiuqin Wu",
+        "code": "QDEMXW"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/XWZK7V/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/XWZK7V/resources/NED_poster_ADASS2026_CgFci8g.pdf",
+    "image": {
+      "full": "/posters/XWZK7V.webp",
+      "thumb": "/posters/XWZK7V-thumb.webp"
+    }
+  },
+  {
+    "code": "HCRAAF",
+    "title": "Radio Signatures of Merger Shocks in Galaxy Groups: Predictions from Cosmological Simulations",
+    "abstract": "While merger-driven shocks in galaxy clusters are well established cosmic ray accelerators, the recent discovery of extended continuum emission around galaxy groups, called Odd Radio Circles (ORCs), in wide-field radio surveys like EMU (ASKAP) raises the question whether similar processes also operate in less massive environments. Using state-of-the-art numerical models of cosmic ray electron injection and evolution in cosmological context, we investigate the hypothesis that ORCs are radio signatures of merger shocks through high-resolution numerical simulations. We present the first zoom-in simulation of a galaxy group using the on-the-fly spectral cosmic ray solver CRESCENDO within the magnetohydrodynamic SPH code OpenGadget3. In our analysis, we place special emphasis on applying techniques that yield self-consistent mock observational quantities for polarization properties and flux densities, which enables a direct comparison between the model and observed counterparts. This allows to assess the role of diffusive shock acceleration in ORCs and its importance relative to particle injection from supernovae and active galactic nuclei in the energy budget of galaxy groups. The simulation predicts large-scale, diffuse cosmic ray populations in the sub-relativistic regime throughout the circumgalactic medium (CGM), extending beyond the virial radius of ~400 kpc. As increasingly sensitive radio surveys with growing sky coverage produce ever larger data volumes, neural-network-based source classification will be essential for identifying such emission and ultimately in establishing the dominant physical mechanisms shaping the CGM of galaxy groups and even Milky Way-like galaxies.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-04",
+    "start": "10:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Anna Ivleva",
+        "code": "AUMSXS"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/HCRAAF/"
+  },
+  {
+    "code": "RQVARA",
+    "title": "Teaching AI in Astronomy",
+    "abstract": "Experiences teaching two AI classes for advanced undergraduates will be reported.  In the first example (ASTR320, Theoretical Astrophysics) students were  programming problems using Claude, but the focus was astrophysics.\nIn the second example (ASTR498I, Special Problems in Astronomy) we take a different approach and let students learn to solve computing problems purely by prompting. This class will be taught in the Fall 2026, and the abstract cannot reflect our experiences yet. At time of presentation we have had two months of experience to report though.\nWe will also review a number of reported cases of teaching AI in astronomy.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-04",
+    "start": "10:36",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Peter Teuben",
+        "code": "7RXGMM"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/RQVARA/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/RQVARA/resources/Teuben-Poster-Landscape_jtAzQvm.pdf"
+  },
+  {
+    "code": "D3GNAM",
+    "title": "A Configurable and Reusable Batch-Processing Pipeline for Time-Domain Astronomical Data",
+    "abstract": "Time-domain astronomical observations continuously generate large volumes of data that require repeated processing through multiple steps before science-ready data products can be produced and released. As the number of telescopes and observing systems increases, maintaining telescope-specific processing scripts becomes difficult to reuse, monitor, and extend. We present a configurable and reusable batch-processing pipeline designed to support the processing and release of time-domain astronomical data.\nThe pipeline separates telescope-specific configurations from common processing logic and organizes data reduction into modular steps with clearly defined inputs, outputs, parameters, and quality metrics. Processing states, logs, and data provenance are recorded for each step, allowing users to identify successfully processed data, locate failed tasks, and rerun individual processing stages when necessary. The pipeline is designed for portable deployment in virtualized or standalone computing environments and can be adapted to different telescopes through configuration and processing modules.\nProcessed science data products are connected to an online data release service that supports data query, visualization, and download. A natural-language query interface based on NL2SQL is also introduced to facilitate data discovery without requiring users to directly construct SQL statements. The current implementation is evaluated using time-domain observational datasets from miniST and the ST prototype, demonstrating the feasibility of a reusable processing and data-service workflow for future multi-telescope applications.",
+    "type": "Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-04",
+    "start": "10:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Linying Mi",
+        "code": "GKRHJR"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/D3GNAM/",
+    "board": "P409",
+    "image": {
+      "full": "/posters/D3GNAM.webp",
+      "thumb": "/posters/D3GNAM-thumb.webp"
+    }
+  },
+  {
+    "code": "TQV7GS",
+    "title": "Obsolescence Management: Rewrite, Port, or Emulate?",
+    "abstract": "The Telescope Control System (TCS) of the Canada-France-Hawaii Telescope (CFHT)\nis the result of a multi-year directed effort by a team of multiple\nspecialized software engineers.  Currently we use the 5th generation\nknown as TCS-V.  The core computer which runs the show still uses VxWorks 5\non 32-bit Sun SPARC hardware from the 90s.  The jump from TCS-IV to TCS-V involved\nadding a Linux \"PowerPMAC\", but even that system is now more than a decade old.\nA total rewrite of everything would undoubtedly incur problems we don't\ncurrently have.  It would also cost time on sky for testing, and would\nnot be expected to improve efficiency or performance.  Yet, it was still essential\nthat we consider upgrades now that most of the hardware is obsolete.\nAt the very least, a port to newer computing hardware, and Linux or at\nmaybe a newer version of VxWorks were considered.  This would be a comparable\nturn of the crank as happened between TCS-IV and TCS-V.  Would there be a\nmore efficient path for an observatory with limited resources and lost\nexpertise with the old EPICS system?  We considered the third option which\nwould at least eliminate the hardware worries:  Emulation.  We share some\ntechnical details and status of the SPARC 32 emulator, which has recently\nreached a testing phase.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-04",
+    "start": "10:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Sidik",
+        "code": "PXJQ8T"
+      },
+      {
+        "name": "Conrad Holmberg",
+        "code": "QAB8KA"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/TQV7GS/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/TQV7GS/resources/ADASS-2026-SPARCEmu-Poste_xp7qi3E.pdf"
+  },
+  {
+    "code": "MNGQUJ",
+    "title": "ATRAN_SDC - Modelling Atmospheric Transmission Spectra for Airborne & Ground-Based Infrared Observations",
+    "abstract": "In 1991, Steve Lord released the ATRAN tool for computing atmospheric transmission spectra from the near-infrared to microwave wavelengths. For decades, ATRAN has served as a standard for telluric correction of ground-based and airborne astronomical observations, including several of the infrared instruments that flew aboard the now-decommissioned airborne observatory SOFIA.\n\nAt the SOFIA Data Center (SDC, see presentation B. Greiner), revised versions of the original ATRAN code and its spectral line database have been developed, with the permission of the author, incorporating upgrades and fixes matching the specific needs of SOFIA science data. This new model, named ATRAN_SDC, has been used to generate a databank of mid- and far-infrared transmission spectra, with parameters corresponding to the typical atmospheric conditions during SOFIA science operations. These spectra are publicly available on the University of Stuttgart's Data Repository, and are utilised by the data reduction pipeline package \"Redux”.\n\nTo further improve the access of the global community to these valuable data assets, and adhere to the “FAIR” data principles, the SDC has developed a standalone web application. This interfaces with the ATRAN_SDC code, and allows users to generate fully customised ATRAN_SDC transmission spectra, with a range of relevant parameters, and download them for further analysis and usage on infrared datasets.\n\nThis poster will overview the development of the ATRAN_SDC transmission model and transmission spectra, as well as the functionality of the associated web application. It will also explore the integration of the updated spectra into the Redux data reduction pipeline, as part of an enhanced telluric correction for the mid- and far-infrared instruments FORCAST and FIFI-LS.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-04",
+    "start": "15:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Aaron Bryant",
+        "code": "7MJWQ3"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/MNGQUJ/"
+  },
+  {
+    "code": "CDFZ9G",
+    "title": "How Should We Build the Next Generation of Science Platforms?",
+    "abstract": "Science platforms are evolving from data repositories into computing platforms. As data volumes reach tens of petabytes and scientific workflows become increasingly compute-intensive, downloading datasets for local analysis is no longer sustainable. The shift towards bringing code to the data introduces new challenges in scalability, infrastructure management, operational sustainability, and cost. How should we design the next generation of science platforms to meet these demands?\nThe ESA Datalabs and Archives Cloud Study (EDACS) investigates alternative infrastructure strategies for future science platforms. Rather than assuming a single deployment model, the study evaluates alternative architectural patterns, including expanding existing on-premises infrastructure or adopting a hybrid architecture that extends selected services to cloud-based environments. The assessment considers technical performance, scalability, operational complexity, governance, cost models, sustainability, and opportunities for collaboration with external research infrastructures. ESA Datalabs and selected ESA Science Archives provide representative use cases for this evaluation.\nAs the study is currently in its early stages, this poster presents the motivation, evaluation framework, and architectural considerations that underpin the assessment. Rather than presenting a completed solution, it aims to engage the ADASS community in discussing deployment strategies, architectural patterns, evaluation criteria, and operational experiences from similar large-scale science platforms. We hope these discussions will help shape a robust decision framework for the next generation of data-intensive science infrastructures.",
+    "type": "Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-04",
+    "start": "15:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Javier Ballester Arenas",
+        "code": "Z7JXYU"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/CDFZ9G/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/CDFZ9G/resources/ADASS_EDACS_2026_Javier_B_I9fO0RU.pdf",
+    "image": {
+      "full": "/posters/CDFZ9G.webp",
+      "thumb": "/posters/CDFZ9G-thumb.webp"
+    }
+  },
+  {
+    "code": "VF7YKR",
+    "title": "Towards Plug-and-Play Machine Learning in Astronomy",
+    "abstract": "As in many other disciplines, also in astronomy Machine Learning (ML) is becoming more and more important. Current workflows often force researchers to repeatedly extract and preprocess data in specific formats for using them in their individual ML tools. We present a concept that extends the International Virtual Observatory Alliance (IVOA) vision of interoperability to ML models. Our goal is to enable an easy integration of ML models into existing astronomical tools. By using standardized model representations such as ONNX, our approach enables models to be tested on diverse datasets without significant additional effort. This standardization makes models interchangeable, allows fair comparisons, accelerates iterative development, and simplifies the extension of tools with individual functionalities. Finally, we demonstrate a prototype that integrates various custom-built ML models into the TOPCAT software, showcasing practical applications such as automatic classification or redshift estimation.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-04",
+    "start": "15:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Johanna Riedel",
+        "code": "TVRAZJ"
+      },
+      {
+        "name": "Mark Taylor",
+        "code": "QJNUDG"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/VF7YKR/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/VF7YKR/resources/poster_adass2026_9ybaHO1.pdf",
+    "image": {
+      "full": "/posters/VF7YKR.webp",
+      "thumb": "/posters/VF7YKR-thumb.webp"
+    }
+  },
+  {
+    "code": "P8CRXA",
+    "title": "The Keck Observatory Archive Hurtles Towards the 2030s",
+    "abstract": "KOA is undergoing an ambitious architectural transformation scheduled for completion in Summer  2027, intended to support accelerating data volumes,  efficient and automated operations, and new user services to meet the needs of modern analysis. Some components have been discussed at earlier ADASS meetings: this presentation will give an holistic view of the architecture, and the benefits of new technologies in developing it.\nAutomated real-time ingestion of newly acquired data is being extended to include a dedicated data transfer node  to support ingestion of large data volumes  (>100 GB nightly) created by new instruments (LIGER, SCALES, and HISPEC) under development. They that will propel archive holdings from 200 TB to 1 PB, held on-premises at NExScI . At the same time, management of metadata, creation of database schema - including TAP compliant schema -  and creation of the database tables themselves have been fully automated, with AI support.  The creation and management of user accounts for Keck Investigators have also been fully automated.  A new interactive dashboard-based metrics system will report archive content and usage. \nThe archive services are under active migration to a query infrastructure based on the Open Source \"low-code\" Plotly-Dash framework widely used in business, augmented with R-tree based indexing and interfacing with a TAP-server. Altogether, this new query infrastructure is x20 faster than is the case now, and is much more compact and sustainable. It will sit beneath a new landing page.  KOA is participating in an institutional effort to investigate the value of use Agentic AI in new, natural language end-user services.  Thus far, KOA has investigated the use of harness engineering in building AI applications and in synthesizing documentation for users: the harness includes  doom loop detection, a deterministic rule engine and a self-improving verifier training corpus. The harness has proved to take up 80% of the effort in delivering a prototype LLM interface. \nUnderpinning the effort just described are migrations to Red Hat Enterprise and PostgreSQL,  support for archive security and access controls, and installations of new hardware. These efforts are coordinated at an institutional level. Given that KOA is operated by a small team, we will summarize the management approach and lessons learned in managing this ambitious enterprise.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-04",
+    "start": "15:12",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "G.  Bruce Berriman",
+        "code": "BYLUZL"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/P8CRXA/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/P8CRXA/resources/Berriman_ADASS_OUkCKcN.pdf",
+    "image": {
+      "full": "/posters/P8CRXA.webp",
+      "thumb": "/posters/P8CRXA-thumb.webp"
+    }
+  },
+  {
+    "code": "CMAGVN",
+    "title": "AI assisted observatory management",
+    "abstract": "In the past years the field of observatory operations has seen many technical advances which have predominantly been driven by the need for robotisation. Employing the new opportunities provided by AI agents advances this development. The German Centre for Astrophysics (DZA) has launched several projects in this regard. In this contribution we present\n(1) Exploitation of libraries of documentation (manufacturer documentation, technical manuals, acceptance protocols for telescopes and receivers, commissioning notations and reports) through a RAG system that incoporates a knowledge graph and an agentic router and that enables queries in a chatbot-like manner which bases information solely on the existing documents. This facilitates efficient access to complex technical information compiled by multiple providers and teams with extended cross-referencing. An example use case is the commissioning of the 14 element array of the MeerKAT-Extension telescopes.\n(2) Support of observatory proposal evaluation through a Multi-Agent Review System (MARS). It uses several specialised AI agents that fill different roles in a review process to create structured evaluations that are designed to provide transparent pre-assessments on all aspects of a proposal. Key features include using verifiable evidence as an information base, recording all steps that lead to a quantified assessment or ranking, and using consistent but adaptable scoring frameworks.\nWe will present the development and current capabilities of these systems as well as the strategies used to verify the results.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "AI as a tool for data discovery and data management",
+      "slug": "4-ai-as-a-tool-for-data-discovery-and-data-management"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-04",
+    "start": "15:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Jankowsky Felix",
+        "code": "YE8J83"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/CMAGVN/",
+    "image": {
+      "full": "/posters/CMAGVN.webp",
+      "thumb": "/posters/CMAGVN-thumb.webp"
+    }
+  },
+  {
+    "code": "L8WEQ3",
+    "title": "RAIL: A Community-driven Library to Estimate Photometric Redshifts for LSST and Beyond",
+    "abstract": "The Legacy Survey of Space and Time (LSST) has begun at the Vera C. Rubin Observatory, and is expected to observe around 20 billion galaxies over ten years. The majority of science cases, from cosmology to weak lensing to active galactic nuclei, will need redshifts for these galaxies, but the sheer number of objects will make spectroscopic follow-up for each one impossible. Instead, LSST will provide photometric redshifts (photo-zs). However, photo-zs are not well-represented by point estimates since their probability density functions (PDFs) are typically non-Gaussian, and science cases, such as precision cosmology, will require detailed information about the errors on each estimate. Therefore, LSST will need to publish entire PDFs, rather than a tabular catalogue of photo-z values. Additionally, since there is no consensus on a single photo-z estimation method that clearly provides the best results for every galaxy, multiple PDFs are needed for each source.\n\nThe Redshift Assessment Infrastructure Layers (RAIL) library is a software package capable of estimating photo-z PDFs using multiple algorithms, both at scale for use in major pipelines, and on an interactive level for individual exploration. In this talk, we present how the RAIL team created this library to make testing and estimating photo-zs easier not only for LSST but the wider astronomy community.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-04",
+    "start": "15:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Jennifer Scora",
+        "code": "XMXZ3U"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/L8WEQ3/",
+    "image": {
+      "full": "/posters/L8WEQ3.webp",
+      "thumb": "/posters/L8WEQ3-thumb.webp"
+    }
+  },
+  {
+    "code": "HTF7EV",
+    "title": "grex: A Python Pipeline for SOFIA/GREAT Spectral Data Reduction",
+    "abstract": "We present grex, a Python pipeline for the reduction\nand analysis of spectral line data obtained with the GREAT\ninstrument aboard the Stratospheric Observatory for Infrared Astronomy (SOFIA).\nThe pipeline operates directly on FITS files\nproduced by the GREAT data calibration program (kalibrate),\nand is designed to handle the full complexity of large\nheterodyne datasets. It covers all stages from\ninitial data filtering and quality control, to baseline subtraction,\nspatial gridding, and spectral cube construction. A central feature is a\nPrincipal Component Analysis (PCA) based baseline correction,\nwhich effectively removes complex spectral baselines even in the\npresence of telluric contamination, using a per-mission decomposition\nto account for the varying atmospheric conditions across observing flights.\nThis is particularly important for datasets where a telluric feature\noverlaps in velocity with the target line. The pipeline was developed for\nand validated on the M51 [CII] SOFIA/GREAT dataset, a large, multi-flight\nsurvey comprising over one million spectra obtained across multiple\nobserving campaigns, which represents one of the most challenging\nreduction problems for the GREAT instrument. The pipeline enables\nthe reduction of the underexploited [OI] 63 \\textmu m dataset and it is built\nas a general-purpose tool applicable to any SOFIA/GREAT\ndata available in the archive.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-04",
+    "start": "15:36",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "verbenajl",
+        "code": "RSBPJL"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/HTF7EV/",
+    "board": "P808",
+    "image": {
+      "full": "/posters/HTF7EV.webp",
+      "thumb": "/posters/HTF7EV-thumb.webp"
+    }
+  },
+  {
+    "code": "GHWH8H",
+    "title": "A new CARTA controller for scalable deployment across regional centres",
+    "abstract": "The Cube Analysis and Rendering Tool for Astronomy (CARTA) is a modern visualisation tool with a client-server architecture, designed to support very large image data sizes.\nThe current implementation of CARTA allocates a single backend to each user. This works well on the desktop and in simple site deployments, but limits our ability to scale effectively to larger images in a high-performance computing environment, as the backend process can only reside on a single node. Launching a separate backend process per image allows us to distribute computation by allocating processes to multiple nodes, using heuristics based on the image size and available resources. Serving each image from an isolated process also limits the impact of hardware or software failures on individual node.\nAn extension of this approach would also provide a secure and efficient method for serving files from different locations, such as SKA Regional Centres, allowing users to combine multiple data sources seamlessly in a single frontend environment.\nWe present an outline of the architecture changes that have been implemented to support this model in a new CARTA controller software package, currently under development.",
+    "type": "Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-04",
+    "start": "15:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Angus Comrie",
+        "code": "HE3MTB"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/GHWH8H/"
+  },
+  {
+    "code": "H3RAWD",
+    "title": "The ALMA spectral line search is now online",
+    "abstract": "The ALMA Science Archive (ASA \\url{https://almascience.org/aq}) Query interface now allows users to search for lines that have been actually {\\it detected} in public ALMA data cubes. To that end, we have run the post-processing softwae ALMA Data Mining Toolkit (ADMIT) on all ALMA data-cubes, once at native resolution and once binned by a factor 16, and have ingested the metadata into the ASA database. Users can now not only search for molecules and transitions, but also for redshifts and source velocities or line intensities. We also offer previews for the detected lines as created by ADMIT.\n\nWhile we expect this new functionality to be extremely a very useful addition to the ASA, we do note that it comes with a large number of caveats. This is due to the often uncertain or incorrect source redshifts or velocities, as well as partia incompleteness of the information presented in the case that, for example, not all spectral windows in the raw data also were imaged by ALMA. We ask users to proceed with utmost care and use their own scientific judgement.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-04",
+    "start": "15:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Felix Stoehr",
+        "code": "GUDJKB"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/H3RAWD/",
+    "image": {
+      "full": "/posters/H3RAWD.webp",
+      "thumb": "/posters/H3RAWD-thumb.webp"
+    }
+  },
+  {
+    "code": "VTTC3P",
+    "title": "VROOM-SBI: Amortized Bayesian QU-Fitting for Survey-Scale Faraday Analysis",
+    "abstract": "Faraday rotation along a line of sight is recovered either by Faraday synthesis, which transforms the Stokes Q and U spectra into Faraday depth space, or by QU-fitting, which fits parametric depolarization models directly to Q(λ²) and U(λ²). QU-fitting returns calibrated uncertainties and handles model comparison naturally, but it costs one full Bayesian inference per sightline, typically 10⁴ to 10⁶ forward-model evaluations under a sampler. At survey scale this is prohibitive.\n\nVROOM-SBI removes the sampler. Simulation-based inference never evaluates a likelihood. We draw parameters from the prior, push them through the same forward model QU-fitting already uses (depolarization model, frequency coverage, noise realization), and keep the resulting parameter and spectrum pairs. A neural density estimator learns the mapping from the simulations themselves, so anything the simulator can generate can be inferred, including instrumental effects that are awkward to write into an analytic likelihood.\n\nThe specific method is neural posterior estimation. A conditional normalizing flow q(θ | Q, U) is trained on the simulated pairs by maximizing the log-density of the true parameters given their spectra, so the network targets the posterior directly rather than a likelihood or a summary-statistic distance. Training is paid once per depolarization model and frequency setup. Inference on a new sightline is then a single forward pass returning a full posterior in milliseconds. This amortization is the entire source of the 500x speedup over traditional QU-fitting. Our cost scales with the number of models trained, not the number of pixels.\n\nRecovered posteriors agree with Faraday synthesis and classical QU-fitting carried out using RM-Tools, with coverage validated by Tarp testing and simulation based calibration, at roughly 500× lower per-sightline cost. We have released the code on github (https://github.com/skunkworks-ra/vroom-sbi) and trained models via HuggingFace (https://huggingface.co/skunkworks-ra/vroomsbi) currently for L-Band at the VLA.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-04",
+    "start": "15:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Preshanth Jagannathan",
+        "code": "XQ8SAB"
+      },
+      {
+        "name": "Arpan",
+        "code": "MW7MAP"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/VTTC3P/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/VTTC3P/resources/poster_DJyOW8T.pdf"
+  },
+  {
+    "code": "UULBVK",
+    "title": "A reproducible workflow for multi-frequency radio continuum spectral mapping",
+    "abstract": "Multi-frequency radio continuum studies often require combining images from different sub-bands, surveys, or telescopes, each with different angular resolutions, pixel grids, image centres, and frequency metadata. These differences can make spectral analysis difficult to reproduce and prone to subtle systematic errors. We present a prototype workflow for generating science-ready spectral maps from heterogeneous radio continuum FITS images. The workflow reads beam and frequency metadata, determines an appropriate common synthesised beam, convolves images to a matched resolution, regrids them to a common user-defined WCS, and packages the matched images into a frequency-tracked cube. The pipeline can then be used to generate spectral maps, uncertainty maps, and goodness-of-fit products, while warning users when large frequency gaps or significant differences in input spatial resolution may affect interpretation. This workflow provides a reproducible and adaptable framework for multi-frequency radio analysis, with the potential to be integrated into broader science platforms such as those being developed for SKA precursor and future SKA science.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Building and operating science platforms and workflows in the Petabyte Era",
+      "slug": "7-building-and-operating-science-platforms-and-workflows-in-the-petabyte-era"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-05",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Chandra Murugeshan",
+        "code": "KNZFZH"
+      },
+      {
+        "name": "Jordan Collier",
+        "code": "QBXWB3"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/UULBVK/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/UULBVK/resources/ADASS_A1_Portrait_v1_ChPwlBT.pdf",
+    "image": {
+      "full": "/posters/UULBVK.webp",
+      "thumb": "/posters/UULBVK-thumb.webp"
+    }
+  },
+  {
+    "code": "RVHEFA",
+    "title": "A robust and scalable deep learning approach for detecting gravitational waves",
+    "abstract": "We present a hybrid search pipeline for detecting gravitational waves from compact binary coalescences (CBCs): By using the output of matched filtering as an input to a deep learning model, our pipeline is able to detect any CBC composed of neutron stars and stellar mass black holes. We show that our approach is highly complementary to the existing search pipelines, and is resilient to non-gaussian noise artefacts.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as tool for scientific discovery",
+      "slug": "5-ai-as-tool-for-scientific-discovery"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-05",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Alistair McLeod",
+        "code": "ZCLGYZ"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/RVHEFA/"
+  },
+  {
+    "code": "SHQ98B",
+    "title": "The FIFI-LS Pipeline at the SOFIA Data Center – Preserving the legacy of Far-Infrared Imaging Spectroscopy",
+    "abstract": "The SOFIA Data Center (SDC, see presentation B. Greiner) was founded in 2024 at the Institut für Raumfahrtsysteme, Universität Stuttgart, Germany. Its goal is to preserve the entire scientific and technical databank of the former airborne observatory SOFIA, enhance the quality of its contents, and support astronomical research through free and accessible data distribution. Data reprocessing is enabled by an updated version of the data reduction pipeline package \"Redux”, incorporating the experience of over a decade of science mission operations and data analysis. The rich scientific legacy of SOFIA’s observations will be consequently made available to the global community in the form of a \"Virtual Observatory\" (VO) hosted by the University of Stuttgart's Data Repository, adhering to the “FAIR” principles of data assets.\n\nAmong the science pipelines being actively maintained at the SDC is that of the imaging spectrometer FIFI-LS, which operated on SOFIA from 2014-2022, delivering a wealth of far-infrared spectral data. Much of this data remains unpublished, and contains astrophysical diagnostics from wavelength ranges that will be out of reach to any observatory for at least the next half-decade. As of mid-2026, work & improvements to the FIFI-LS pipeline are steadily converging, with focus shifting to the reprocessing and subsequent archival of the full dataset on the future VO.\n\nThis poster will overview the general functionality of the FIFI-LS pipeline, and present several major data reduction enhancements implemented at the SDC. These include a full flux recalibration, enhanced on-the-fly telluric correction, and the automatic generation of science-ready data products. Additionally, the science data reprocessing & archival strategy will be outlined.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-05",
+    "start": "10:00",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Aaron Bryant",
+        "code": "7MJWQ3"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/SHQ98B/"
+  },
+  {
+    "code": "CA7TPL",
+    "title": "The Australia Telescope Compact Array \"BIGCAT\" GPU backend",
+    "abstract": "The Australia Telescope Compact Array (ATCA) has been a key Australian radio facility for over 30 years. Its new backend, the Broadband Integrated GPU Correlator for ATCA (BIGCAT), modernises the entire signal-processing chain and doubles the processed bandwidth from 4 to 8 GHz. The upgrade replaces the IF system, digitisers, and correlator, greatly improving spectral flexibility and reliability. BIGCAT uses CSIRO's custom \"Jimble\" RFSoC digitiser (also deployed on the Parkes/Murriyang telescope) to provide wideband sampling, coarse channelisation, and 100 GbE data transport. The core of the digital signal processing is a GPU cluster that performs geometric corrections, fine channelisation, cross-correlation, and averaging, with software-defined modes enabling high adaptability. The aggregate data rate from the telescopes is ~1.7 Tbps, which must be processed in real time.\n\nBIGCAT has now been in routine operation for six months, and this talk will outline its capabilities and technical advances in light of that experience, along with plans for advanced modes that will support ATCA over the next decade.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-05",
+    "start": "10:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Chris Phillips",
+        "code": "3RHND7"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/CA7TPL/",
+    "image": {
+      "full": "/posters/CA7TPL.webp",
+      "thumb": "/posters/CA7TPL-thumb.webp"
+    }
+  },
+  {
+    "code": "G8ABDE",
+    "title": "Toward Natural Language Search in the ALMA Science Archive Using LLM Source Descriptions",
+    "abstract": "The ALMA Science Archive contains over 455,000 FITS images spanning a wide range of astronomical sources but currently lacks natural language search capabilities. We present a proof-of-concept semantic search system operating at the source level: rather than assigning descriptions at the project or observing unit level, we generate one BM25-optimized text description per unique astronomical source by aggregating proposal and publication abstracts from every project that observed that source across the archive. We prompt gpt-4o-mini to extract source type, physical properties, morphological description, and key scientific findings in a form optimized for BM25 retrieval rather than human reading. Of 54,060 unique source names identified in the archive, 10,758 had at least one associated abstract; 8,609 received descriptions and results were indexed into Elasticsearch for free-text retrieval. Comparing BM25 on LLM-extracted descriptions against BM25 on raw abstracts across 20 morphological and astrophysical queries, we find an average overlap of 2.0 out of 5 results, demonstrating that the two retrieval methods are complementary rather than redundant. We further implement an image-text bridge using pre-computed visual similarity scores (Stoehr et al. 2025): for each image without a direct source description, we assess whether its 30 most visually similar images share semantically consistent descriptions and assign a description only when they do, achieving coverage of 44% to 98% of all 455,448 images depending on the consistency threshold applied. This work represents a first step toward natural language search in the ALMA archive. The pipeline is designed for compatibility with locally-hosted models, enabling scaling to the full source catalog.",
+    "type": "Poster",
+    "track": {
+      "name": "AI as a tool for data discovery and data management",
+      "slug": "4-ai-as-a-tool-for-data-discovery-and-data-management"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-05",
+    "start": "10:24",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Kiera McCormick",
+        "code": "CWJFHA"
+      },
+      {
+        "name": "Adele Plunkett",
+        "code": "RVZF93"
+      },
+      {
+        "name": "Felix Stoehr",
+        "code": "GUDJKB"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/G8ABDE/",
+    "image": {
+      "full": "/posters/G8ABDE.webp",
+      "thumb": "/posters/G8ABDE-thumb.webp"
+    }
+  },
+  {
+    "code": "RCKH9R",
+    "title": "Results from Improving the Visibility and Citability of Exoplanet Research Software",
+    "abstract": "The Astrophysics Source Code Library (ASCL) is a free online registry for software used in astronomy, astrophysics, and planetary science research. As of September 2026, it contains more than 4,100 software entries and is indexed by NASA’s Astrophysics Data System (ADS/SciX) and Clarivate’s Web of Science. NASA’s Exoplanet Modeling and Analysis Center (EMAC), established in 2020, catalogs and hosts resources for exoplanet research, including research software.\n\nIn 2025, NASA funded the ASCL to improve the visibility of EMAC software and associated resources through services exoplanet researchers already use, particularly ADS/SciX. The ASCL created new records and augmented existing records for software represented in EMAC, adding links between the two resources and providing citable ASCL identifiers for software that did not already have a recognized citation mechanism. This project also examined whether metadata collected by the ASCL and shared with ADS/SciX might improve the identification and citation of research software. This poster reports this work and its results.",
+    "type": "Poster",
+    "track": {
+      "name": "Topical Computing, Software and Algorithms",
+      "slug": "11-topical-computing-software-and-algorithms"
+    },
+    "room": "Conference Foyer 2",
+    "day": "2026-11-05",
+    "start": "10:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Alice Allen",
+        "code": "LBAAHJ"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/RCKH9R/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/RCKH9R/resources/ADASS_ASCL_EMAC_A1poster_g9YJJEj.pdf"
+  },
+  {
+    "code": "JBDYGC",
+    "title": "The Golden Docker Image - A DevOps Approach on How One Environment Can Unfrustrate All.",
+    "abstract": "Management of software in a secure and modern environment poses many challenges. This includes building and deploying for multiple platforms, virtualization of legacy applications, and package management for complex environments. The Canada France Hawaii Telescope (CFHT) dealt with this dilemma through a containerization of a standard software environment. Labeled the \"Golden Image\"; this software package provides security, CFHT binary commands, development libraries, network access, common Linux tools, and much more in a secure multi-platform environment for software development for both existing and new projects. The CFHT Golden Docker Image is built through a Continuous Integration and Continuous Development (CI/CD) pipeline through the GitLab application. Two versions are provided: one for development and the second is lightweight for running applications. Other projects pull the Golden Image from a container repository for their development and production needs. The CI/CD pipeline instructions are to be used as a standard template for other projects. This ensures ease of use, use of grouped resource tasks (i.e., compiling, releases), and standardized naming conventions. The Golden Image is pulled as a template by other projects to build their own containers for automatic development. Uniformly, this standard has been a success for standardizing, fast pacing, and providing better security for software development at CFHT. Not only was the implementation of the Golden Success a success, but also how persuasion is a key factor in adopting new technologies and standards.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "The art of collaboration in astronomy software development",
+      "slug": "9-the-art-of-collaboration-in-astronomy-software-development"
+    },
+    "room": "Conference Foyer 1",
+    "day": "2026-11-05",
+    "start": "10:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Conrad Holmberg",
+        "code": "QAB8KA"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/JBDYGC/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/JBDYGC/resources/ADASS-2026-GoldenImage-Po_KaD0emq.pdf",
+    "board": "P603",
+    "image": {
+      "full": "/posters/JBDYGC.webp",
+      "thumb": "/posters/JBDYGC-thumb.webp"
+    }
+  },
+  {
+    "code": "WXU3NL",
+    "title": "Towards a unified data infastructure for LOFAR 2.0",
+    "abstract": "LOFAR is one of the largest radio interferometers in the world, and the largest in the lower frequencies. In the first decade of its existance, the development has focused on the instrumental capabilities, which over the years have led to many discoveries and sky surveys.\n\nThe current development focus is on the migration from the first generation of LOFAR to LOFAR 2.0, which is planned to start observations in 2027. The LOFAR 2.0 development has two focal points. First of all, improving the capabilities of the instrument itself so that more instrumental modes can be used to increase the scientific capabilities. The second focus, which is relevant for this contribution, is making the output data and the end-user facing services around the execution of the observational process more accessible, to support the astronomy community at large making use of our telescope.\n\nIn this contribution we will present how the different user-facing services are being built in an integrated way. We do this by applying a uniform look-and-feel for the end user between proposal writing, project management, up to the user ingest of processed data. On top of this, we make sure the different services are also technically integrated, so that a single action flow can be done from within the same interface, and use common services like Federated AAI infrastructure which supports user authorisation across applications.",
+    "type": "Featured Poster",
+    "track": {
+      "name": "Usability, accessibility and security in astronomy software",
+      "slug": "8-usability-accessibility-and-security-in-astronomy-software"
+    },
+    "room": "Seminar Room 2",
+    "day": "2026-11-05",
+    "start": "10:48",
+    "duration": "00:12",
+    "persons": [
+      {
+        "name": "Yan Grange",
+        "code": "8MXX3M"
+      }
+    ],
+    "url": "https://pretalx.adass.org/adass2026/talk/WXU3NL/",
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/WXU3NL/resources/Grange_Poster_ADASS_cxADDoy.pdf"
+  }
+]
