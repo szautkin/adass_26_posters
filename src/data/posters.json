@@ -236,7 +236,11 @@
       }
     ],
     "url": "https://pretalx.adass.org/adass2026/talk/ZKM9MV/",
-    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/ZKM9MV/resources/Poster-ALLEN_M_S04lCHP.pdf"
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/ZKM9MV/resources/Poster-ALLEN_M_S04lCHP.pdf",
+    "image": {
+      "full": "/posters/ZKM9MV.webp",
+      "thumb": "/posters/ZKM9MV-thumb.webp"
+    }
   },
   {
     "code": "9ZAVQS",
@@ -516,7 +520,11 @@
       }
     ],
     "url": "https://pretalx.adass.org/adass2026/talk/JCHVNT/",
-    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/JCHVNT/resources/ADASS2026_poster_BG_SDCso_EicmvmI.pdf"
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/JCHVNT/resources/ADASS2026_poster_BG_SDCso_EicmvmI.pdf",
+    "image": {
+      "full": "/posters/JCHVNT.webp",
+      "thumb": "/posters/JCHVNT-thumb.webp"
+    }
   },
   {
     "code": "WWKV97",
@@ -667,7 +675,12 @@
       }
     ],
     "url": "https://pretalx.adass.org/adass2026/talk/8MGFHV/",
-    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/8MGFHV/resources/CANFAR_Skaha_ADASS2026_po_UU5cMtN.pdf"
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/8MGFHV/resources/CANFAR_Skaha_ADASS2026_po_UU5cMtN.pdf",
+    "board": "P402",
+    "image": {
+      "full": "/posters/8MGFHV.webp",
+      "thumb": "/posters/8MGFHV-thumb.webp"
+    }
   },
   {
     "code": "T7JFUD",
@@ -1352,7 +1365,11 @@
         "code": "7MJWQ3"
       }
     ],
-    "url": "https://pretalx.adass.org/adass2026/talk/MNGQUJ/"
+    "url": "https://pretalx.adass.org/adass2026/talk/MNGQUJ/",
+    "image": {
+      "full": "/posters/MNGQUJ.webp",
+      "thumb": "/posters/MNGQUJ-thumb.webp"
+    }
   },
   {
     "code": "CDFZ9G",
@@ -1654,7 +1671,11 @@
         "code": "7MJWQ3"
       }
     ],
-    "url": "https://pretalx.adass.org/adass2026/talk/SHQ98B/"
+    "url": "https://pretalx.adass.org/adass2026/talk/SHQ98B/",
+    "image": {
+      "full": "/posters/SHQ98B.webp",
+      "thumb": "/posters/SHQ98B-thumb.webp"
+    }
   },
   {
     "code": "CA7TPL",
@@ -1734,7 +1755,11 @@
       }
     ],
     "url": "https://pretalx.adass.org/adass2026/talk/RCKH9R/",
-    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/RCKH9R/resources/ADASS_ASCL_EMAC_A1poster_g9YJJEj.pdf"
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/RCKH9R/resources/ADASS_ASCL_EMAC_A1poster_g9YJJEj.pdf",
+    "image": {
+      "full": "/posters/RCKH9R.webp",
+      "thumb": "/posters/RCKH9R-thumb.webp"
+    }
   },
   {
     "code": "JBDYGC",
@@ -1783,6 +1808,10 @@
       }
     ],
     "url": "https://pretalx.adass.org/adass2026/talk/WXU3NL/",
-    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/WXU3NL/resources/Grange_Poster_ADASS_cxADDoy.pdf"
+    "pdf": "https://pretalx.adass.org/media/adass2026/submissions/WXU3NL/resources/Grange_Poster_ADASS_cxADDoy.pdf",
+    "image": {
+      "full": "/posters/WXU3NL.webp",
+      "thumb": "/posters/WXU3NL-thumb.webp"
+    }
   }
 ]
