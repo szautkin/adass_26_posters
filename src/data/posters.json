@@ -966,7 +966,11 @@
         "code": "RVNAQU"
       }
     ],
-    "url": "https://pretalx.adass.org/adass2026/talk/QSYMQC/"
+    "url": "https://pretalx.adass.org/adass2026/talk/QSYMQC/",
+    "image": {
+      "full": "/posters/QSYMQC.webp",
+      "thumb": "/posters/QSYMQC-thumb.webp"
+    }
   },
   {
     "code": "A8BRSC",
