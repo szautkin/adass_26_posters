@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from "react"
-import { useNavigate, useParams, useSearchParams } from "react-router"
+import { Link, useNavigate, useParams, useSearchParams } from "react-router"
 import { posters } from "../lib/catalog.ts"
 import {
   filterPosters,
@@ -98,7 +98,15 @@ export function BrowsePage() {
         <div className="mx-auto flex max-w-6xl flex-wrap items-end justify-between gap-4 px-4 py-6">
           <div>
             <p className="text-xs tracking-[0.16em] text-primary uppercase">Perth, Western Australia · 2–5 November 2026</p>
-            <h1 className="mt-1 font-serif text-4xl text-foreground">ADASS XXXVI</h1>
+            <h1 className="mt-1 font-serif text-4xl text-foreground">
+              <Link
+                to="/"
+                title="Home, clear filters"
+                className="rounded-sm hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+              >
+                ADASS XXXVI
+              </Link>
+            </h1>
             <p className="mt-1 text-sm text-muted">Poster browser</p>
           </div>
           <ToggleGroup
